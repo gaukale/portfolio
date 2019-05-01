@@ -2,79 +2,98 @@
  <html>
    <head>
      <!--Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
           <title>Gauri Kale | Bay Area Based UI/UX Designer</title>
      <!-- CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=centuryschoolbook:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i" rel="stylesheet">
+
      <!-- JS -->
    </head>
 
    <body>
      <!-- Navigation Bar -->
 
-        <nav class="navbar row">
-            <img src="images/logo.png">
-
-            <ul>
-                  <li>Work</li>
-                  <li>About Me</li>
-                  <li>Contact</li>
-                  <li>Resume</li>
-            </ul>
+        <nav>
+          <div class = "navbar-left">
+             <img src="images/logo.png" height="70" width="70">
+          </div>
+        <div class = "navbar-right">
+          <ul>
+            <li> <a href="project.html">Work</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>Resume</li>
+        </ul>
+      </div>
 </nav>
 
 <!-- Hero Content -->
 
-    <section>
+    <section calss ="hero-content">
 
-      <p> Hello, I'm Gauri.</p>
-			<p>An UI/UX Designer</p>
-      <p>with a passion for</p>
+    <div class="intro">
+     <h1>Hello, I'm Gauri</h1>
+			<h2>An UI/UX Designer<br>
+      with a passion for</h2>
       <p>User Interface Design | Art | Food | Music | Gym | Nature </p>
+    </div>
 
-    </section>
+  </section>
 
     <!-- Main -->
 
-            <section>
+            <section class ="case-study" id="databox">
 
-                        <h1>Data Box</h1>
-                        <p>Cloud storage application and brand that would rethink the cloud storage market by targeting the problems people face today.</p>
+              <div class="container1">
+                <img src="images/desktopMockupImage.png">
+                <h2>Data Box</h2>
+                <p>Cloud storage application and brand that would rethink the cloud storage market by targeting the problems people face today.</p>
+                <a class="button" href="project.html">View case study</a>
+              </div>
 
             </section>
 
-            <section>
+            <section class ="case-study" id="newproject">
 
-                        <h1>New Project</h1>
-                        <p>Project Details</p>
-                        <a href="" class="btn">View Case Study</a>
+              <div class = "container2">
+                <img src="/images/desktopMockupImage.png">
+                <h2>New Project</h2>
+                <p>Project Details</p>
+                <a class="button" href="">View case study</a>
+              </div>
 
             </section>
 
 <!-- About Me -->
-      <section>
+      <section class = "aboutme">
         <h1 >Little More About Me</h1>
         <p>I am UX designer currently seeking challenging and fulfilling position as a UX/Product Designer where I can utilize my UX design and development skills to bring ideas to life, building on my graphic design background.</p>
-        <a href="" class="btn">Resume</a>
+        <a class="button" href="aboutme.html">View case study</a>
       </section>
 
-        <section>
+        <section class = "contactme">
 
           <h1>Lets get acquainted!</h1>
-          <a href="" class="btn">Contact Me</a>
+          <a href="contact.html">Contact Me</a>
 
         </section>
 
 <!-- Footer Section -->
-    <footer>
-          <h6>&copy; Designed and Built by Gauri Kale</h6>
-
-
-        <ul>
-            <li><a href="gaukale@gmail.com"><img src="images/gmail.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/gauri-kale-designer"><img src="images/linkedln.png"></a></li>
-            <li><a href="https://github.com/gaukale"><img src="images/github.png"></i></a></li>
-        </ul>
-
-      </footer>
+<footer>
+  <div class = "footer-left">
+     <h6>&copy; Designed and Built by Gauri Kale</h6>
+  </div>
+<div class = "footer-right">
+  <ul>
+    <li><a href="gaukale@gmail.com"><img src="images/gmail.png" height="30" width="30"></a></li>
+    <li><a href="https://www.linkedin.com/in/gauri-kale-designer"><img src="images/linkedln.png" height="30" width="30"></a></li>
+    <li><a href="https://github.com/gaukale"><img src="images/github.png" height="30" width="30"></i></a></li>
+   </ul>
+</div>
+</footer>
 
    </body>
  </html>

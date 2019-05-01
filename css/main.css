@@ -1,0 +1,188 @@
+
+
+*, *::before, *::after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+ }
+ html, body{
+  font-size: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  height: 100%;
+}
+body{
+  font-family: "Montserrat", "Century Schoolbook";
+  color: #21201F;
+
+}
+.navbar-left {
+   display: inline-block;
+   margin-top: 20px;
+   float: left;
+   width: 42px;
+   padding-left: 40px;
+}
+.navbar-right ul li{
+   display: inline-block;
+   margin-top: 60px;
+   text-align: right;
+   float: right;
+   width: auto;
+   overflow: hidden;
+   padding-left: 40px;
+  }
+
+a {
+    color: #333333;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    color: #F7B334;
+}
+
+ .hero-content{
+   padding-top: 25%;
+   text-align: center;
+ }
+ .intro h1{
+     padding-top: 150px;
+     font-size:35px;
+     font-weight:500;
+     text-align: center;
+ }
+ .intro h2, p{
+   font-size:50px;
+   font-weight:500;
+   text-align: center;
+   margin-top: .5rem;
+ }
+ .intro p{
+   padding-bottom: 150px;
+
+ }
+ .case-study {
+ padding-bottom: 150px;
+ }
+
+ .case-study h2 {
+  background-position: 50% 50%;
+  margin: 0 auto;
+  font-size:35px;
+  font-weight:500;
+  text-align: center;
+ }
+
+ .case-study p {
+  background-position: 50% 50%;
+  margin: 0 auto;
+  font-size:20px;
+  font-weight:300;
+  text-align: center;
+  padding-bottom:150px;
+ }
+ .aboutme{
+     display: table-cell;
+     text-align: center;
+     vertical-align: middle;
+     background-color: #DCDBDB;
+ }
+
+ .aboutme h1{
+   padding-bottom: 20px;
+   font-size:35px;
+   font-weight:500;
+   text-align: center;
+
+ }
+ .aboutme p{
+   padding-bottom: 20px;
+   font-size:20px;
+   font-weight:300;
+   text-align: center;
+
+ }
+
+ .contactme h1{
+   font-size:35px;
+   font-weight:500;
+   text-align: center;
+}
+  .contactme a{
+   text-decoration: underline;
+ }
+.footer-right ul li {
+   overflow: hidden;
+   float: right;
+   padding-left: 40px;
+   padding-right: 20px;
+   display: inline-block;
+   margin-top: 20px;
+   width: auto;
+   overflow: hidden;
+
+}
+
+.footer-left h6{
+  font-size: 15px;
+  overflow: hidden;
+  margin-left: 100px;
+  display: inline-block;
+  margin-top: 20px;
+  float: left;
+
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    margin-top: 1em;
+    color: #FFFF;
+    background-color: #F9600A;
+    text-align: center;
+    padding: 0 10px;
+    font-size: .8em;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+
+}
+.container1{
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #B4B5B9;
+  }
+  .container1 img{
+      width: 70%;
+      height: 90%;
+
+    }
+  .container2{
+      display: table;
+      position: relative;
+      width: 100%;
+      height: 70%;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #B4B5B9;
+    }
+    .contactme {
+
+      text-align: center;
+      vertical-align: middle;
+      background-color: #FFFF;
+    }
