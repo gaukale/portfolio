@@ -6,11 +6,11 @@
   outline: 0;
   box-sizing: border-box;
 }
-html{
-  width: 100%
-}
+
+html {}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Merriweather';
 }
 
 .containertop {
@@ -29,18 +29,16 @@ body {
   font-family: Montserrat;
   color: #012832;
   font-weight: 600;
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 .navbar-left {
   width: auto;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 50px;
   float: left;
-  padding-top: 20px;
 }
-
 
 .containerintro {
   display: flex;
@@ -68,7 +66,6 @@ body {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-
 }
 
 .case-study {
@@ -76,7 +73,7 @@ body {
 }
 
 .containerdatabox {
-  background-color: #DCDBDB;
+  background-color:#f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,7 +101,7 @@ body {
 }
 
 .containerfitapp {
-  background-color: #DCDBDB;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,7 +114,7 @@ body {
   font-weight: 800;
   color: #012832;
   font-family: Montserrat;
-  }
+}
 
 .containerfitapp p {
   font-size: 18px;
@@ -136,7 +133,7 @@ body {
 }
 
 .containerme {
-  background-color: #ffff;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,18 +150,18 @@ body {
 
 .containerme p {
   padding-top: 20px;
-  font-size: 25px;
+  font-size: 1.2em;
   font-weight: 400;
-  font-style: italic;
   color: #21201F;
   font-family: Merriweather;
   letter-spacing: 0.1em;
+  line-height: 1.8;
   text-align: center;
   padding-bottom: 40px;
 }
 
 .containerinfo {
-  background-color: #ffff;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,14 +179,15 @@ body {
 }
 
 .containerinfo a {
-background-color: #21201F;
+  background-color: #21201F;
 }
 
 .footer-right ul li {
   overflow: hidden;
   float: right;
-  margin-right: 60px;
   width: auto;
+  padding-top: 50px;
+  padding-right: 25px;
 }
 
 .footer-left h6 {
@@ -201,6 +199,7 @@ background-color: #21201F;
   font-weight: 400;
   color: #21201F;
   font-family: Montserrat;
+  padding-top: 50px;
 }
 
 .button,
@@ -233,105 +232,257 @@ a:link {
 a:hover {
   color: #F7B334;
 }
+
 /* case-study data box */
 .databoxcontainer {
-  background-color: #DCDBDB;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
   width: 100%;
-  height: 600px;
 }
+
 .databoxcontainer h1 {
-  font-size: 30px;
+  font-size: 1.8em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
-  padding-top: 20px;
 }
+
 .databoxcontainer h3 {
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 600;
   color: #012832;
-  font-family:Montserrat;
+  font-family: Montserrat;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
+
 .databoxcontainer img {
-  width: 70%
+  width: 60%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: #696969;
 }
-.summarycontainer{
+
+.summarycontainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 200px;
+  padding-top: 20px;
   width: 100%;
-  height: 200px;
 }
-.summarycontainer h2{
-  font-size: 25px;
+
+.summarycontainer h2 {
+  font-size: 1.5em;
   font-weight: 800;
   color: #F9600A;
-  font-family:Montserrat;
+  font-family: Montserrat;
+  padding-left: 200px;
 }
-.summarycontainer p{
-  font-size: 1.2em;;
-  font-weight: 200;
+
+.summarycontainer p {
+  font-size: 1em;
   color: #21201F;
   padding-bottom: 20px;
-  line-height: 1.5rem;
+  line-height: 1.8;
   font-family: Merriweather;
-  }
-.summarycontainer span{
-  font-size: 1em;;
-  font-weight: bold;
-  color: #21201F;
-  font-family: centuryschoolbook;
+  padding-left: 200px;
 }
-.probsoulcontainer{
+
+.mainpoints span {
+  font-weight: 600;
+}
+
+.probsoulcontainer {
   display: flex;
   flex-direction: row;
-  background-color: #DCD8D8;
-  width: 100%;
-  height: 200px;
+  align-items: flex-start;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  width: 100%
 }
-.problemleft{
+
+.problemleft {
   width: auto;
   overflow: hidden;
   float: left;
-  margin-left:200px;
-
+  margin-left: 200px;
 }
-.problemleft h2{
-  font-size: 25px;
+
+.problemleft h2, .solutionright h2 {
+  font-size: 1.5em;
   font-weight: 800;
   color: #F9600A;
-  font-family:Montserrat;
+  font-family: Montserrat;
   text-align: left;
 }
-.problemleft p{
-  font-size: 1.2em;;
-  font-weight: 200;
+
+.problemleft p, .solutionright p {
+  font-size: 1em;
   color: #21201F;
   padding-bottom: 20px;
-  line-height: 1.5rem;
+  line-height: 1.8;
   font-family: Merriweather;
 }
-.solutionright{
+
+.process1, .process2, .process3, .finaldesign, .workingfigma, .preferencetesting, .usabilitytestingpart2 {
+  background-color: #f2f2f2
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.title {
+  color: #F9600A;
+  font-family: Montserrat;
+  font-size: 1.8em;
+  text-decoration: underline;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 200px;
+}
+
+.subtitle {
+  color: #012832;
+  font-family: Montserrat;
+  font-size: 1.2em;
+  padding-left: 200px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.points {
+  font-size: 1em;
+  color: #21201F;
+  font-family: Merriweather;
+  padding-left: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.8;
+}
+
+.goalpoints span, .analysispoints span, .pointsmainleft span, .testing2points span {
+  font-style: italic;
+  line-height: 1.8;
+  font-family: Merriweather;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.personaimages, .surveyimages , .brandingimages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.userstoryimage, .sitemapimage, .userflowimages1,.userflowimages2 , .wireframeimage, .brandingimages1 , .mockupimages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageleft {
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageright {
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ .brandingimages2{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.survey a, .analysis a, .persona a, .userstories a, .userflows a, .usabilitytestingpart1 a {
+  text-decoration: underline;
+  color: #F9600A;
+  font-weight: 600;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0 15px;
+  margin: 0 auto;
+  color: #FFFF;
+  background-color: #F9600A;
+  text-align: center;
+  font-size: 15px;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.insights {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.insightsleft h1, .insightsright h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #F9600A;
+  font-family: Montserrat;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.insightleft p, .insightsright p {
+  font-size: .0.8em;
+  color: #21201F;
+  font-family: Merriweather;
+  margin-top: 50px;
+  text-align: left;
+  padding-right: 100px;
+}
+
+.insightsleft {
+  margin-right: auto;
+}
+
+.insightsright {
   margin-left: auto;
 }
-.solutionright h2{
-  font-size: 25px;
-  font-weight: 800;
-  color: #F9600A;
-  font-family:Montserrat;
-  text-align: left;
-  margin-left: 200px;
-}
-.solutionright p{
-  font-size: 1.2em;;
-  font-weight: 200;
+
+.nextstudy a {
+  font-size: 1em;
+  font-weight: 500;
   color: #21201F;
-  padding-bottom: 20px;
-  line-height: 1.5rem;
-  font-family: Merriweather;
-  margin-left: 200px;
+  text-decoration: underline;
+  float: right;
+  padding-right: 50px;
 }
