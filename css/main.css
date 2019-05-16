@@ -68,12 +68,12 @@ body {
   padding-right: 50px;
 }
 
-.case-study {
-  padding-top: 60px;
+.case-study, .aboutme, .contactme {
+  padding-top: 80px;
 }
 
 .containerdatabox {
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,17 +128,13 @@ body {
   width: 70%
 }
 
-.aboutme {
-  padding-top: 120px;
-}
-
 .containerme {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 300px;
+  height: 365px;
 }
 
 .containerme h1 {
@@ -146,10 +142,10 @@ body {
   font-weight: 500;
   color: #012832;
   font-family: Montserrat;
+  padding-top: 50px;
 }
 
 .containerme p {
-  padding-top: 20px;
   font-size: 1.2em;
   font-weight: 400;
   color: #21201F;
@@ -157,16 +153,16 @@ body {
   letter-spacing: 0.1em;
   line-height: 1.8;
   text-align: center;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .containerinfo {
-  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 300px;
+  height: 365px;
 }
 
 .containerinfo h1 {
@@ -187,7 +183,7 @@ body {
   float: right;
   width: auto;
   padding-top: 50px;
-  padding-right: 25px;
+  padding-right: 60px;
 }
 
 .footer-left h6 {
@@ -244,19 +240,20 @@ a:hover {
 }
 
 .databoxcontainer h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
+  padding-top: 20px;
 }
 
 .databoxcontainer h3 {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   color: #012832;
   font-family: Montserrat;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .databoxcontainer img {
@@ -280,15 +277,18 @@ a:hover {
   color: #F9600A;
   font-family: Montserrat;
   padding-left: 200px;
+  padding-bottom: 20px;
 }
 
 .summarycontainer p {
   font-size: 1em;
   color: #21201F;
-  padding-bottom: 20px;
   line-height: 1.8;
   font-family: Merriweather;
   padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .mainpoints span {
@@ -301,14 +301,14 @@ a:hover {
   align-items: flex-start;
   padding-top: 20px;
   background-color: #f2f2f2;
-  width: 100%
+  width: 100%;
 }
 
 .problemleft {
   width: auto;
   overflow: hidden;
   float: left;
-  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .problemleft h2, .solutionright h2 {
@@ -325,9 +325,10 @@ a:hover {
   padding-bottom: 20px;
   line-height: 1.8;
   font-family: Merriweather;
+  padding-right: 100px;
 }
 
-.process1, .process2, .process3, .finaldesign, .workingfigma, .preferencetesting, .usabilitytestingpart2 {
+.process1, .process2, .process3, {
   background-color: #f2f2f2
 }
 
@@ -355,8 +356,8 @@ a:hover {
   font-size: 1.2em;
   padding-left: 200px;
   text-decoration: underline;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .points {
@@ -364,6 +365,7 @@ a:hover {
   color: #21201F;
   font-family: Merriweather;
   padding-left: 200px;
+  padding-right: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 1.8;
@@ -377,7 +379,7 @@ a:hover {
   padding-bottom: 20px;
 }
 
-.personaimages, .surveyimages , .brandingimages{
+.personaimages, .surveyimages, .userstoryimage, .brandingimages, .mockupimages {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +388,14 @@ a:hover {
   padding-top: 20px;
 }
 
-.userstoryimage, .sitemapimage, .userflowimages1,.userflowimages2 , .wireframeimage, .brandingimages1 , .mockupimages {
+.image {
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sitemapimage, .userflowimages1, .userflowimages2, .wireframeimage, .brandingimages1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,30 +403,37 @@ a:hover {
   margin-right: auto;
   border: 1px solid #BFBFBF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .imageleft {
   border: 1px solid #BFBFBF;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .imageright {
   border: 1px solid #BFBFBF;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
- .brandingimages2{
+.brandingimages2 {
   flex-direction: row;
   display: flex;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border: 1px solid #BFBFBF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 .survey a, .analysis a, .persona a, .userstories a, .userflows a, .usabilitytestingpart1 a {
   text-decoration: underline;
@@ -444,12 +460,21 @@ input[type="button"] {
   text-transform: uppercase;
 }
 
-.insights {
+.insightscontainer {
   display: flex;
   flex-direction: row;
-  background-color: #f2f2f2;
-  margin-top: 20px;
   align-items: flex-start;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.insightsleft {
+  width: auto;
+  overflow: hidden;
+  float: left;
+  padding-left: 200px;
 }
 
 .insightsleft h1, .insightsright h1 {
@@ -458,24 +483,21 @@ input[type="button"] {
   color: #F9600A;
   font-family: Montserrat;
   text-align: left;
-  margin-top: 50px;
+  padding-top: 20px;
 }
 
-.insightleft p, .insightsright p {
-  font-size: .0.8em;
+.insightsleft p, .insightsright p {
+  font-size: 1em;
   color: #21201F;
+  padding-bottom: 20px;
+  line-height: 1.8;
   font-family: Merriweather;
-  margin-top: 50px;
-  text-align: left;
   padding-right: 100px;
-}
-
-.insightsleft {
-  margin-right: auto;
+  padding-bottom: 20px;
 }
 
 .insightsright {
-  margin-left: auto;
+  padding-left: 20px;
 }
 
 .nextstudy a {
@@ -483,6 +505,5 @@ input[type="button"] {
   font-weight: 500;
   color: #21201F;
   text-decoration: underline;
-  float: right;
-  padding-right: 50px;
+  margin-left: 80%;
 }
