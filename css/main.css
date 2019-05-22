@@ -1,4 +1,5 @@
-*,
+
+
 *:before,
 *:after {
   padding: 0;
@@ -9,142 +10,116 @@
 
 html {}
 
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Montserrat', 'Merriweather';
 }
 
 .containertop {
   display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
 }
 
 .navbar-right {
-  margin-left: auto;
+  width: auto;
 }
 
-.navbar-right ul li {
-  float: right;
-  width: auto;
-  overflow: hidden;
-  margin-right: 60px;
-  font-family: Montserrat;
+.navbar-right ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-right li {
+  padding: 3rem .8rem;
+  font-size: .8rem;
+  font-weight: bold;
   color: #012832;
-  font-weight: 600;
-  padding-top: 30px;
 }
 
 .navbar-left {
-  width: auto;
-  overflow: hidden;
-  margin-top: 10px;
-  margin-left: 50px;
-  float: left;
+  display: flex;
+  justify-content: flex-start;
 }
 
+.navbar-left img {
+  padding: 1rem;
+}
 .containerintro {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   width: 100%;
-  height: 500px;
-  padding-top: 100px;
 }
-
 .containerintro h1, h2 {
-  font-size: 50px;
+  font-size:1.8rem;
   font-weight: 400;
   color: #012832;
   font-family: Montserrat;
   text-align: center;
   line-height: 1.8em;
 }
-
 .containerintro p {
-  font-size: 60px;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight:bold;
   color: #F9600A;
   font-family: Montserrat;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 2% 5%;
 }
 
 .case-study, .aboutme, .contactme {
-  padding-top: 80px;
+  padding-top: 15%;
 }
 
-.containerdatabox {
+.containerdatabox , .containerfitapp , .containerme , .containerinfo {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 665px;
+  height:auto;
+}
+.containerinfo{
+  background-color: #FFFF;
 }
 
-.containerdatabox img {
-  width: 70%
+.containerdatabox img , .containerfitapp img{
+  width: 70%;
+  padding-top: 10%;
 }
 
-.containerdatabox h2 {
-  font-size: 30px;
+.containerdatabox h2 , .containerfitapp h2{
+  font-size: 1.8rem;
   font-weight: 800;
   color: #012832;
   font-family: Montserrat;
 }
 
-.containerdatabox p {
-  font-size: 18px;
+.containerdatabox p , .containerfitapp p , .containerme p {
+  font-size: .8rem;
   font-weight: 400;
   color: #012832;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
   font-family: Merriweather;
-  padding-bottom: 20px;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
-.containerfitapp {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 800px;
-}
-
-.containerfitapp h2 {
-  font-size: 30px;
-  font-weight: 800;
-  color: #012832;
-  font-family: Montserrat;
-}
-
-.containerfitapp p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #012832;
-  font-family: Merriweather;
-  padding-bottom: 20px;
-}
-
-.containerfitapp img {
-  width: 70%
-}
-
-.containerme {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 365px;
-}
-
-.containerme h1 {
-  font-size: 40px;
+.containerme h1{
+  font-size: 2rem;
   font-weight: 500;
   color: #012832;
   font-family: Montserrat;
-  padding-top: 50px;
+  padding-top: 10%;
 }
-
 .containerme p {
   font-size: 1.2em;
   font-weight: 400;
@@ -152,53 +127,58 @@ body {
   font-family: Merriweather;
   letter-spacing: 0.1em;
   line-height: 1.8;
+  padding-top: 10%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
 }
-
-.containerinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 365px;
-}
-
-.containerinfo h1 {
-  padding-top: 20px;
-  font-size: 25px;
+.containerinfo h1{
+  font-size: 2rem;
   font-weight: 500;
   color: #012832;
-  font-family: Merriweather;
-  padding-bottom: 20px;
+  font-family: Montserrat;
+  padding-bottom: 10%;
 }
-
 .containerinfo a {
   background-color: #21201F;
+  }
+
+.containerbottom {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
 }
 
-.footer-right ul li {
-  overflow: hidden;
-  float: right;
+.footer-right {
   width: auto;
-  padding-top: 50px;
-  padding-right: 60px;
+}
+
+.footer-right ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-right li {
+  padding: 3rem .5rem;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .footer-left h6 {
-  overflow: hidden;
-  margin-left: 60px;
-  width: auto;
-  float: left;
-  font-size: 20px;
+  font-size: 0.666rem;
   font-weight: 400;
   color: #21201F;
   font-family: Montserrat;
-  padding-top: 50px;
+  padding-top: 4rem;
+  padding-left: .5rem;
 }
 
-.button,
+.containerdatabox , .containerfitapp , .containerme ,.button{
+  padding-bottom:10%;
+}
+.button
 button,
 input[type="submit"],
 input[type="reset"],
@@ -215,7 +195,7 @@ input[type="button"] {
   letter-spacing: .1rem;
   font-weight: 600;
   text-transform: uppercase;
-}
+  }
 
 a {
   color: #333333;
@@ -507,3 +487,24 @@ input[type="button"] {
   text-decoration: underline;
   margin-left: 80%;
 }
+
+/* About me page */
+.heroimage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:50px;
+  }
+  .heroimage img{
+  width: 100%;
+
+  }
+  .coninfo h1 , .mybio h1{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #F9600A;
+    font-family: Montserrat;
+    text-align: center;
+    padding-top: 20px;
+
+  }
