@@ -1,5 +1,3 @@
-
-
 *:before,
 *:after {
   padding: 0;
@@ -8,8 +6,9 @@
   box-sizing: border-box;
 }
 
-html {}
-
+html {
+  width: 100%;
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -36,10 +35,11 @@ body {
 }
 
 .navbar-right li {
-  padding: 3rem .8rem;
+  padding: 2em .5em;
   font-size: .8rem;
   font-weight: bold;
   color: #012832;
+  overflow: hidden;
 }
 
 .navbar-left {
@@ -50,6 +50,7 @@ body {
 .navbar-left img {
   padding: 1rem;
 }
+
 .containerintro {
   display: flex;
   flex-direction: column;
@@ -57,17 +58,19 @@ body {
   position: relative;
   width: 100%;
 }
+
 .containerintro h1, h2 {
-  font-size:1.8rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #012832;
   font-family: Montserrat;
   text-align: center;
   line-height: 1.8em;
 }
+
 .containerintro p {
   font-size: 2rem;
-  font-weight:bold;
+  font-weight: bold;
   color: #F9600A;
   font-family: Montserrat;
   text-align: center;
@@ -78,31 +81,32 @@ body {
   padding-top: 15%;
 }
 
-.containerdatabox , .containerfitapp , .containerme , .containerinfo {
+.containerdatabox, .containerfitapp, .containerme, .containerinfo {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height:auto;
+  height: auto;
 }
-.containerinfo{
+
+.containerinfo {
   background-color: #FFFF;
 }
 
-.containerdatabox img , .containerfitapp img{
+.containerdatabox img, .containerfitapp img {
   width: 70%;
   padding-top: 10%;
 }
 
-.containerdatabox h2 , .containerfitapp h2{
+.containerdatabox h2, .containerfitapp h2 {
   font-size: 1.8rem;
   font-weight: 800;
   color: #012832;
   font-family: Montserrat;
 }
 
-.containerdatabox p , .containerfitapp p , .containerme p {
+.containerdatabox p, .containerfitapp p, .containerme p {
   font-size: .8rem;
   font-weight: 400;
   color: #012832;
@@ -113,13 +117,14 @@ body {
   text-align: center;
 }
 
-.containerme h1{
+.containerme h1 {
   font-size: 2rem;
   font-weight: 500;
   color: #012832;
   font-family: Montserrat;
   padding-top: 10%;
 }
+
 .containerme p {
   font-size: 1.2em;
   font-weight: 400;
@@ -130,16 +135,18 @@ body {
   padding-top: 10%;
   text-align: center;
 }
-.containerinfo h1{
-  font-size: 2rem;
+
+.containerinfo h1 {
+  font-size: 2em;
   font-weight: 500;
   color: #012832;
   font-family: Montserrat;
   padding-bottom: 10%;
 }
+
 .containerinfo a {
   background-color: #21201F;
-  }
+}
 
 .containerbottom {
   display: flex;
@@ -159,6 +166,7 @@ body {
 
 .footer-right li {
   padding: 3rem .5rem;
+  overflow: hidden;
 }
 
 .footer-left {
@@ -175,11 +183,11 @@ body {
   padding-left: .5rem;
 }
 
-.containerdatabox , .containerfitapp , .containerme ,.button{
-  padding-bottom:10%;
+.containerdatabox, .containerfitapp, .containerme, .button {
+  padding-bottom: 10%;
 }
-.button
-button,
+
+.button button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -195,7 +203,7 @@ input[type="button"] {
   letter-spacing: .1rem;
   font-weight: 600;
   text-transform: uppercase;
-  }
+}
 
 a {
   color: #333333;
@@ -215,25 +223,22 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
   width: 100%;
+  height: auto;
 }
 
 .databoxcontainer h1 {
-  font-size: 2em;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
-  padding-top: 20px;
 }
 
 .databoxcontainer h3 {
-  font-size: 1.5em;
+  font-size: .8rem;
   font-weight: 600;
   color: #012832;
   font-family: Montserrat;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 
 .databoxcontainer img {
@@ -241,34 +246,35 @@ a:hover {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: #696969;
+  margin-top: 10%;
 }
 
 .summarycontainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 20px;
-  width: 100%;
+  position: relative;
 }
 
 .summarycontainer h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
-  padding-left: 200px;
-  padding-bottom: 20px;
+  padding-bottom: 2%;
+  max-width: 80%;
+  margin: auto;
 }
 
 .summarycontainer p {
-  font-size: 1em;
+  font-size: .8em;
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  text-align: left;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 2%;
 }
 
 .mainpoints span {
@@ -277,35 +283,38 @@ a:hover {
 
 .probsoulcontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  padding-top: 20px;
   background-color: #f2f2f2;
   width: 100%;
+  height: auto;
 }
 
 .problemleft {
   width: auto;
   overflow: hidden;
   float: left;
-  padding-left: 200px;
 }
 
 .problemleft h2, .solutionright h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
   text-align: left;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 1rem;
 }
 
 .problemleft p, .solutionright p {
-  font-size: 1em;
+  font-size: .8em;
   color: #21201F;
   padding-bottom: 20px;
   line-height: 1.8;
   font-family: Merriweather;
-  padding-right: 100px;
+  max-width: 80%;
+  margin: auto;
 }
 
 .process1, .process2, .process3, {
@@ -316,75 +325,83 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 20px;
+  padding-top: 5%;
   width: 100%;
 }
 
 .title {
   color: #F9600A;
   font-family: Montserrat;
-  font-size: 1.8em;
+  font-size: 1.3em;
   text-decoration: underline;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 200px;
+  padding-top: 5%;
+  max-width: 80%;
+  margin: auto;
 }
 
 .subtitle {
   color: #012832;
   font-family: Montserrat;
-  font-size: 1.2em;
-  padding-left: 200px;
+  font-size: 1em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 80%;
+  margin: auto;
   text-decoration: underline;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 
 .points {
-  font-size: 1em;
+  font-size: .8em;
   color: #21201F;
   font-family: Merriweather;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   line-height: 1.8;
+  max-width: 80%;
+  margin: auto;
 }
 
 .goalpoints span, .analysispoints span, .pointsmainleft span, .testing2points span {
   font-style: italic;
-  line-height: 1.8;
+  line-height: 1.2;
   font-family: Merriweather;
   font-weight: 600;
-  padding-bottom: 20px;
+  padding-top: 2%;
 }
 
-.personaimages, .surveyimages, .userstoryimage, .brandingimages, .mockupimages {
+.surveyimages, .personaimages, .userstoryimage, .userflowimage1, .userflowimage2, .sitemapimage, .wireframeimage, .brandingimages, .mockupimages, .branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1 img, .userflowimage2 img, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 75%;
+}
+
+.branding img, .brandingimages1, .brandingimages2 {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #BFBFBF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.sitemapimage, {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
-}
-
-.image {
   border: 1px solid #BFBFBF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.sitemapimage, .userflowimages1, .userflowimages2, .wireframeimage, .brandingimages1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #BFBFBF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  width: 75%;
 }
 
 .imageleft {
@@ -393,6 +410,7 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 75%;
 }
 
 .imageright {
@@ -401,18 +419,7 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.brandingimages2 {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #BFBFBF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 75%;
 }
 
 .survey a, .analysis a, .persona a, .userstories a, .userflows a, .usabilitytestingpart1 a {
@@ -442,69 +449,61 @@ input[type="button"] {
 
 .insightscontainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  padding-top: 20px;
+  padding-top: 2%;
   background-color: #f2f2f2;
   width: 100%;
-  margin-top: 50px;
-}
-
-.insightsleft {
-  width: auto;
-  overflow: hidden;
-  float: left;
-  padding-left: 200px;
+  margin-top: 10%;
 }
 
 .insightsleft h1, .insightsright h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
   text-align: left;
-  padding-top: 20px;
+  padding-top: 5%;
+  max-width: 80%;
+  margin: auto;
 }
 
 .insightsleft p, .insightsright p {
-  font-size: 1em;
+  font-size: .8em;
   color: #21201F;
-  padding-bottom: 20px;
   line-height: 1.8;
   font-family: Merriweather;
-  padding-right: 100px;
-  padding-bottom: 20px;
-}
-
-.insightsright {
-  padding-left: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 80%;
+  margin: auto;
 }
 
 .nextstudy a {
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 500;
   color: #21201F;
   text-decoration: underline;
-  margin-left: 80%;
+  margin-left: 60%;
 }
 
 /* About me page */
-.heroimage{
+.heroimage {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:50px;
-  }
-  .heroimage img{
+  padding-top: 50px;
+}
+
+.heroimage img {
   width: 100%;
+}
 
-  }
-  .coninfo h1 , .mybio h1{
-    font-size: 1.5em;
-    font-weight: 800;
-    color: #F9600A;
-    font-family: Montserrat;
-    text-align: center;
-    padding-top: 20px;
-
-  }
+.coninfo h1, .mybio h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #F9600A;
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 20px;
+}
