@@ -21,8 +21,9 @@ body {
 .containertop {
   display: flex;
   flex-direction: row;
-  position: relative;
   justify-content: space-between;
+  height: auto;
+  position: relative;
 }
 
 .navbar-right {
@@ -51,6 +52,26 @@ body {
   padding: 1rem;
 }
 
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .navbar-right li {
+    font-size: 1.2rem;
+    padding: 1.5em 1em;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px) {
+  .containertop {
+    width: 100%;
+  }
+
+  .navbar-right li {
+    font-size: 1.5rem;
+    padding: 2.5em 1.8em;
+  }
+}
+
 .containerintro {
   display: flex;
   flex-direction: column;
@@ -77,8 +98,34 @@ body {
   padding: 2% 5%;
 }
 
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .containerintro h1, h2 {
+    font-size: 2.5rem;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .containerintro p {
+    font-size: 3rem;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px) {
+  .containerintro h1, h2 {
+    font-size: 3rem;
+  }
+
+  .containerintro p {
+    font-size: 4rem;
+  }
+}
+
 .case-study, .aboutme, .contactme {
-  padding-top: 15%;
+  padding-top: 5%;
 }
 
 .containerdatabox, .containerfitapp, .containerme, .containerinfo {
@@ -104,10 +151,12 @@ body {
   font-weight: 800;
   color: #012832;
   font-family: Montserrat;
+  max-width: 80%;
+  margin: auto
 }
 
 .containerdatabox p, .containerfitapp p, .containerme p {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #012832;
   line-height: 1.8;
@@ -115,25 +164,26 @@ body {
   font-family: Merriweather;
   padding-bottom: 5%;
   text-align: center;
+  max-width: 80%;
+  margin: auto
 }
 
 .containerme h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #012832;
   font-family: Montserrat;
-  padding-top: 10%;
+  padding-top: 5%;
+  max-width: 80%;
+  margin: auto
 }
 
 .containerme p {
   font-size: 1.2em;
-  font-weight: 400;
   color: #21201F;
-  font-family: Merriweather;
-  letter-spacing: 0.1em;
-  line-height: 1.8;
-  padding-top: 10%;
+  font-family: Montserrat;
   text-align: center;
+  padding-top: 5%;
 }
 
 .containerinfo h1 {
@@ -141,11 +191,71 @@ body {
   font-weight: 500;
   color: #012832;
   font-family: Montserrat;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .containerinfo a {
   background-color: #21201F;
+}
+
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .containerdatabox img, .containerfitapp img {
+    width: 80%;
+  }
+
+  .case-study, .aboutme, .contactme {
+    padding-top: 10%;
+  }
+
+  .containerdatabox h2, .containerfitapp h2 {
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .containerdatabox p, .containerfitapp p, .containerme p {
+    font-size: 1.3rem;
+  }
+
+  .containerme h1, .containerinfo h1 {
+    font-size: 2.5rem;
+  }
+
+  .footer-left h6 {
+    font-size: 1.2em;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px) {
+  .containerdatabox h2, .containerfitapp h2 {
+    font-size: 2.8rem;
+  }
+
+  .containerdatabox p, .containerfitapp p, .containerme p {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    padding-bottom: 2%;
+  }
+
+  .containerme h1, .containerinfo h1 {
+    font-size: 3rem;
+  }
+
+  .containerme p h1 {
+    padding-top: 2%;
+  }
+
+  .footer-right li {
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+
+  .footer-left h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 }
 
 .containerbottom {
@@ -165,7 +275,7 @@ body {
 }
 
 .footer-right li {
-  padding: 3rem .5rem;
+  padding: 3rem 1.2rem;
   overflow: hidden;
 }
 
@@ -175,7 +285,7 @@ body {
 }
 
 .footer-left h6 {
-  font-size: 0.666rem;
+  font-size: 1.5em;
   font-weight: 400;
   color: #21201F;
   font-family: Montserrat;
@@ -184,7 +294,7 @@ body {
 }
 
 .containerdatabox, .containerfitapp, .containerme, .button {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .button button,
@@ -218,6 +328,8 @@ a:hover {
 }
 
 /* case-study data box */
+
+
 .databoxcontainer {
   background-color: #f2f2f2;
   display: flex;
@@ -232,13 +344,20 @@ a:hover {
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
+  padding-top: 2%;
+  max-width: 80%;
+  margin: auto;
 }
 
 .databoxcontainer h3 {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #012832;
   font-family: Montserrat;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 2%;
 }
 
 .databoxcontainer img {
@@ -249,37 +368,112 @@ a:hover {
   margin-top: 10%;
 }
 
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .databoxcontainer img {
+    width: 80%;
+  }
+
+  .databoxcontainer h1 {
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+  }
+
+  .databoxcontainer h3 {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px) {
+  .databoxcontainer img, {
+    width: 90%;
+  }
+
+  .databoxcontainer h1 {
+    font-size: 3.5rem;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .databoxcontainer h3 {
+    font-size: 2.2rem;
+    max-width: 75%;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
 .summarycontainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: relative;
+  width: 100%;
+  height: auto;
 }
-
 .summarycontainer h2 {
-  font-size: 1.2em;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
-  padding-bottom: 2%;
   max-width: 80%;
   margin: auto;
-}
-
+  padding-top: 2%;
+  }
 .summarycontainer p {
-  font-size: .8em;
+  font-size: 1.1rem;
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
-  text-align: left;
   max-width: 80%;
   margin: auto;
   padding-bottom: 2%;
 }
 
-.mainpoints span {
+.mainpoints span{
   font-weight: 600;
 }
+
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .summarycontainer h2 {
+    font-size: 1.5rem;
+    max-width: 85%;
+    margin: auto;
+    }
+  .summarycontainer p {
+    font-size: 1.2rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  .mainpoints p{
+    padding-left: 1.5em;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width:1024px) {
+  .summarycontainer h2 {
+    font-size: 2rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  .summarycontainer p {
+    font-size: 1.5rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  .mainpoints p{
+    padding-left: 4em;
+  }
+}
+
+
 
 .probsoulcontainer {
   display: flex;
@@ -289,83 +483,160 @@ a:hover {
   width: 100%;
   height: auto;
 }
-
-.problemleft {
-  width: auto;
-  overflow: hidden;
-  float: left;
-}
-
-.problemleft h2, .solutionright h2 {
-  font-size: 1.2em;
+.probsoulcontainer h2 {
+  font-size: 1.3rem;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
   text-align: left;
   max-width: 80%;
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 2%;
 }
-
-.problemleft p, .solutionright p {
-  font-size: .8em;
+.probsoulcontainer p {
+  font-size: 1.1rem;
   color: #21201F;
-  padding-bottom: 20px;
+  padding-bottom:2%;
   line-height: 1.8;
   font-family: Merriweather;
   max-width: 80%;
   margin: auto;
 }
 
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .probsoulcontainer h2 {
+    font-size: 1.5rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  .probsoulcontainer p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 85%;
+    margin: auto;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width:1024px) {
+.probsoulcontainer h2 {
+ font-size: 1.8rem;
+ max-width: 85%;
+ margin: 0 auto;
+}
+.probsoulcontainer p {
+font-size: 1.5rem;
+max-width: 85%;
+margin: 0 auto;
+}
+}
 .process1, .process2, .process3, {
   background-color: #f2f2f2
 }
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 5%;
   width: 100%;
-}
+  height: auto;
+  }
 
 .title {
   color: #F9600A;
   font-family: Montserrat;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   text-decoration: underline;
-  padding-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
 }
-
 .subtitle {
   color: #012832;
   font-family: Montserrat;
-  font-size: 1em;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  font-size: 1.2em;
+  padding-top: 1%;
+  padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
   text-decoration: underline;
 }
-
 .points {
-  font-size: .8em;
+  font-size: 1.2rem;
   color: #21201F;
   font-family: Merriweather;
   line-height: 1.8;
+  padding-top: 1%;
+  padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
 }
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .title {
+    font-size: 1.8rem;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .points {
+    font-size: 1.3rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.2rem;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .points {
+    font-size: 1.3rem;
+    max-width: 85%;
+    margin: auto;
+  }
+  .container {
+    max-width: 95%;
+    margin: auto;
+  }
+}
 
 .goalpoints span, .analysispoints span, .pointsmainleft span, .testing2points span {
-  font-style: italic;
   line-height: 1.2;
   font-family: Merriweather;
   font-weight: 600;
   padding-top: 2%;
 }
+/*Tablets ----------- */
+@media (min-width:640px){
+
+}
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px){
+
+}
+
 
 .surveyimages, .personaimages, .userstoryimage, .userflowimage1, .userflowimage2, .sitemapimage, .wireframeimage, .brandingimages, .mockupimages, .branding {
   display: flex;
@@ -378,11 +649,13 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 5%;
   margin-bottom: 5%;
-  width: 75%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.branding img, .brandingimages1, .brandingimages2 {
-  max-width: 80%;
+.brandingimages1, .brandingimages2, .brandingimages3 {
+  max-width: 70%;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #BFBFBF;
@@ -391,26 +664,15 @@ a:hover {
   margin-bottom: 2%;
 }
 
-.sitemapimage, {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #BFBFBF;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 75%;
-}
-
 .imageleft {
   border: 1px solid #BFBFBF;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 75%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .imageright {
@@ -419,7 +681,42 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 75%;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Tablets ----------- */
+@media (min-width:640px) {
+  .mockupimages, .brandingimages, .userflowimage1, .userflowimage2{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1 img, .userflowimage2 img, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+  max-width: 75%;
+}
+}
+
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px) {
+  .branding {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .mockupimages, .brandingimages, .userflowimage1, .userflowimage2 ,{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1 img, .userflowimage2 img, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+    max-width: 85%;
+  }
 }
 
 .survey a, .analysis a, .persona a, .userstories a, .userflows a, .usabilitytestingpart1 a {
@@ -458,7 +755,97 @@ input[type="button"] {
 }
 
 .insightsleft h1, .insightsright h1 {
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #F9600A;
+  font-family: Montserrat;
+  text-align: left;
+  padding-top: 2%;
+  max-width: 80%;
+  margin: auto;
+}
+.insightsleft p, .insightsright p {
+  font-size: 1.1em;
+  color: #21201F;
+  line-height: 1.8;
+  font-family: Merriweather;
+  padding-top: 2%;
+  padding-bottom:2%;
+  max-width: 80%;
+  margin: auto;
+}
+.nextstudy a {
+  font-size: .8em;
+  font-weight: 500;
+  color: #21201F;
+  text-decoration: underline;
+  margin-left: 60%;
+}
+/*Tablets ----------- */
+@media (min-width:640px){
+  .insightsleft h1, .insightsright h1 {
+    font-size: 2em;
+    max-width: 85%;
+    margin: auto;
+    }
+    .insightsleft p, .insightsright p{
+    font-size: 1.3em;
+    max-width: 85%;
+    margin: auto;
+    }
+    .nextstudy a{
+    font-size: 1em;
+    margin-left: 75%;
+  }
+
+}
+/* Desktops and laptops ----------- */
+@media (min-width: 1024px){
+  .insightsleft h1, .insightsright h1 {
+    font-size: 2.5em;
+    max-width: 75%;
+    margin: auto;
+    }
+  .insightsleft p, .insightsright p{
+    font-size: 1.7em;
+    max-width: 75%;
+    margin: auto;
+    }
+    .nextstudy a{
+    font-size:1.2em;
+    margin-left: 80%;
+  }
+
+
+}
+
+/* About me page */
+
+
+.heroimage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroimage img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.containermybio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.containermybio h1 {
+  font-size: 1.8em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
@@ -468,42 +855,79 @@ input[type="button"] {
   margin: auto;
 }
 
-.insightsleft p, .insightsright p {
-  font-size: .8em;
-  color: #21201F;
+.containermybio p {
+  font-size: 1.2em;
+  color: #012832;
   line-height: 1.8;
-  font-family: Merriweather;
+  font-family: Montserrat;
   padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 80%;
+  margin: auto;
+  text-align: justify;
+}
+
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.coninfo h1 {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #F9600A;
+  font-family: Montserrat;
+  text-align: left;
   padding-bottom: 5%;
   max-width: 80%;
   margin: auto;
 }
 
-.nextstudy a {
-  font-size: .8em;
-  font-weight: 500;
-  color: #21201F;
-  text-decoration: underline;
-  margin-left: 60%;
-}
-
-/* About me page */
-.heroimage {
+.coninfobutton, .myresume {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 50px;
+  flex-direction: row;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 5%;
 }
 
-.heroimage img {
-  width: 100%;
+.coninfobutton a {
+  background-color: #21201F;
 }
+@media (min-width:640px){
+  .paintingimage{
+    max-width: 100%;
+    margin: auto;
+  }
+  .paintingimage img{
+    width: 100%;
+  }
+  .containermybio h1 , .coninfo h1{
+    font-size: 2.5rem;
+  }
+  .containermybio p{
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #012832;
 
-.coninfo h1, .mybio h1 {
-  font-size: 1.5em;
-  font-weight: 800;
-  color: #F9600A;
-  font-family: Montserrat;
-  text-align: center;
-  padding-top: 20px;
+  }
+}
+@media (min-width:1024px){
+  .paintingimage{
+    max-width: 100%;
+    margin: auto;
+  }
+  .paintingimage img{
+    width: 100%;
+  }
+  .containermybio h1 , .coninfo h1{
+    font-size: 2.5rem;
+  }
+  .containermybio p{
+    font-size: 1.5rem;
+
+  }
 }
