@@ -77,25 +77,42 @@ body {
     padding: 2em 1em;
   }
 
-  .navbar-left img {
+  .navbar-left img, .work img {
     padding: 1rem;
-    max-width: 65%;
+    max-width: 60%;
     margin: auto;
+  }
+
+  .work li {
+    padding: .8rem 1rem;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #012832;
+    overflow: hidden;
   }
 }
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
   .navbar-right li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 2em 1em;
-    padding-top:
   }
 
   .navbar-left img {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     max-width: 90%;
     margin: auto;
+  }
+
+  .work li {
+    padding: 1.8rem 1rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #012832;
+    overflow: hidden;
   }
 }
 
@@ -326,7 +343,7 @@ body {
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
   .footer-right li {
-    padding: 4rem 2rem;
+    padding: 3.5rem 2rem;
     overflow: hidden;
   }
 
@@ -431,6 +448,7 @@ a:hover {
 @media (min-width: 1024px) {
   .databoxcontainer img, {
     width: 90%;
+    height: auto;
   }
 
   .databoxcontainer h1 {
@@ -506,17 +524,18 @@ a:hover {
     margin: auto;
     text-align: left;
   }
-  .summarycontainer p , .mainpoints p {
+
+  .summarycontainer p, .mainpoints p {
     font-size: 1.5rem;
     width: 85%;
     max-width: 100%;
     margin: auto;
   }
-  .mainpoints{
-    width: 100%;
-    margin:auto;
-  }
 
+  .mainpoints {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 .probsoulcontainer {
@@ -567,14 +586,16 @@ a:hover {
 
 /* Desktops and laptops ----------- */
 @media (min-width:1024px) {
-  .problemleft , .solutionright {
+  .problemleft, .solutionright {
     width: 100%;
     max-width: 100%;
     margin: auto;
   }
+
   .problemleft h1, .solutionright h1 {
     font-size: 2rem;
   }
+
   .problemleft p, .solutionright p {
     font-size: 1.5rem;
     width: 85%;
@@ -586,6 +607,7 @@ a:hover {
 .process1, .process2, .process3, {
   background-color: #f2f2f2
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -593,16 +615,17 @@ a:hover {
   width: 100%;
   height: auto;
 }
+
 .title {
   color: #F9600A;
   font-family: Montserrat;
   font-size: 1.3rem;
-  text-decoration: underline;
-  padding-top: 3%;
-  padding-bottom: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   max-width: 80%;
   margin: auto;
 }
+
 .subtitle {
   color: #012832;
   font-family: Montserrat;
@@ -611,8 +634,8 @@ a:hover {
   padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
-  text-decoration: underline;
 }
+
 .points {
   font-size: 1rem;
   color: #21201F;
@@ -623,27 +646,32 @@ a:hover {
   max-width: 80%;
   margin: auto;
 }
+
 .resanddis h3 {
   max-width: 80%;
   margin-left: 50%;
 }
-.resanddis p{
-font-size: 1.1rem;
-color: #21201F;
-line-height: 1.8;
-font-family: Merriweather;
-max-width: 80%;
-margin: auto;
-padding-top: 2%;
-padding-bottom: 2%;
+
+.resanddis p {
+  font-size: 1.1rem;
+  color: #21201F;
+  line-height: 1.8;
+  font-family: Merriweather;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
+
 .goalpoints span {
   font-weight: 600;
-  }
+}
+
 .userflows h3 {
   max-width: 80%;
   margin-left: 12%;
 }
+
 .infoarch h3 {
   max-width: 80%;
   margin-left: 10%;
@@ -651,47 +679,57 @@ padding-bottom: 2%;
 
 /*Tablets ----------- */
 @media (min-width:640px) {
-  .resanddis , .analysis{
+  .resanddis, .analysis {
     width: 85%;
     max-width: 100%;
     margin: auto;
   }
+
   .resanddis h3, .analysis h3, .goalpoints p, .analysis p {
     width: 100%;
     max-width: 100%;
     margin: auto;
   }
+
   .title {
     font-size: 1.8rem;
     max-width: 85%;
     margin: auto;
   }
+
   .subtitle {
     font-size: 1.5rem;
     max-width: 85%;
     margin: auto;
   }
+
   .points {
     font-size: 1.3rem;
     max-width: 85%;
     margin: auto;
   }
+
   .container {
     max-width: 100%;
     margin: auto;
   }
 
-  .goalpoints p{
-  font-size: 1.3rem;
+  .goalpoints p {
+    font-size: 1.3rem;
   }
 
   .userflows h3 {
     max-width: 85%;
     margin-left: 10%;
   }
+
   .infoarch h3 {
     max-width: 85%;
     margin-left: 7%;
+  }
+
+  .process1, .process2, .process3 {
+    background-color: #f2f2f2;
   }
 }
 
@@ -700,44 +738,58 @@ padding-bottom: 2%;
   .container {
     max-width: 100%;
     margin: auto;
+    padding-top: 2%;
   }
+
   .title {
     font-size: 2.2rem;
     max-width: 85%;
     margin: auto;
   }
+
   .subtitle {
+    font-size: 2rem;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .points {
     font-size: 1.5rem;
     max-width: 85%;
     margin: auto;
   }
-  .points {
-    font-size: 1.2rem;
-    max-width: 85%;
-    margin: auto;
-  }
-  .resanddis , .analysis{
+
+  .resanddis, .analysis {
     width: 85%;
     max-width: 100%;
     margin: auto;
   }
+
   .resanddis h3, .analysis h3, .goalpoints p, .analysis p {
     font-size: 1.5rem;
     width: 100%;
     max-width: 100%;
     margin: auto;
   }
+
   .userflows h3 {
-    margin-left:7%;
+    max-width: 85%;
+    margin-left: 7.5%;
   }
+
   .infoarch h3 {
     max-width: 85%;
-    margin-left: 7%;
+    margin-left: 7.5%;
   }
-  .preferencetesting p{
+
+  .preferencetesting p, .userflows p {
     width: 85%;
     max-width: 100%;
     margin: auto;
+  }
+
+  .process1, .process2, .process3 {
+    background-color: #f2f2f2;
   }
 }
 
@@ -748,29 +800,23 @@ padding-bottom: 2%;
   padding-top: 1%;
 }
 
-/*Tablets ----------- */
-@media (min-width:640px) {}
-
-/* Desktops and laptops ----------- */
-@media (min-width: 1024px) {}
-
-.surveyimages, .personaimages, .userstoryimage, .userflowimage1, .userflowimage2, .sitemapimage, .wireframeimage, .brandingimages, .mockupimages, .branding {
+.surveyimages, .personaimages, .userstoryimage, .userflowimages, .sitemapimage, .wireframeimage, .brandingimages, .mockupimages, .branding {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1 img, .userflowimage2 img, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+.surveyimages img, .personaimages img, .userstoryimage img, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
   border: 1px solid #BFBFBF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 3%;
   margin-bottom: 3%;
-  max-width: 70%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.brandingimages1, .brandingimages2, .brandingimages3 {
+.brandingimages1, .brandingimages2, .brandingimages3, .userflowimage1, .userflowimage2 {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -804,7 +850,7 @@ padding-bottom: 2%;
 
 /*Tablets ----------- */
 @media (min-width:640px) {
-  .mockupimages, .brandingimages, .userflowimage1, .userflowimage2 {
+  .mockupimages, .brandingimages, .userflowimages {
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -812,33 +858,34 @@ padding-bottom: 2%;
     align-items: center;
   }
 
-  .surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1 img, .userflowimage2 img, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+  .surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1, .userflowimage2, .sitemapimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
     max-width: 75%;
   }
 }
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
-  .branding {
+  .branding, .brandingimages, .userflowimages {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .mockupimages, .brandingimages, .userflowimage1, .userflowimage2, {
+  .mockupimages {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
   }
 
-  .surveyimages img, .personaimages img, .userstoryimage img, .userflowimage1 img, .userflowimage2 img, .wireframeimage img, .brandingimages img, .mockupimages img {
-    max-width: 85%;
+  .surveyimages img, .personaimages img, .userstoryimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+    max-width: 90%;
   }
 
-  .sitemapimage {
-    max-width: 85%;
+  .sitemapimage, .userflowimages {
+    width: 90%;
     margin: auto;
   }
 }
@@ -926,6 +973,156 @@ input[type="button"] {
     font-size: 1.5em;
     max-width: 85%;
     margin: auto;
+  }
+}
+
+/* Large Screens----------- */
+@media (min-width: 1900px) {
+  .navbar-right li {
+    font-size: 2rem;
+    padding: 2em 1em;
+  }
+
+  .navbar-left img {
+    padding: 1rem 2rem;
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .work li {
+    padding: 1.2em 1em;
+    padding-right: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #012832;
+    overflow: hidden;
+  }
+
+  .summarycontainer h1 {
+    font-size: 2.5rem;
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+  }
+
+  .summarycontainer p, .mainpoints p {
+    font-size: 2rem;
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .problemleft, .solutionright {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .problemleft h1, .solutionright h1 {
+    font-size: 2.5rem;
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .problemleft p, .solutionright p {
+    font-size: 2rem;
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .points {
+    font-size: 2rem;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .resanddis, .analysis {
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .resanddis h3, .analysis h3, .goalpoints p, .analysis p {
+    font-size: 2.2rem;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .goalpoints p, .analysis p {
+    font-size: 2rem;
+  }
+
+  .userflows h3 {
+    width: 75%;
+    max-width: 100%;
+    margin-left: 13%;
+  }
+
+  .infoarch h3 {
+    max-width: 75%;
+    max-width: 100%;
+    margin-left: 13%;
+  }
+
+  .preferencetesting p, .userflows p {
+    width: 75%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .brandingimages1, .surveyimages img {
+    width: 40%;
+  }
+
+  .brandingimages3, .personaimages img, .userflows img, .mockupimages img {
+    width: 60%;
+  }
+
+  .brandingimages2 {
+    width: 40%;
+  }
+
+  .brandingimages img {
+    width: 30%;
+    margin: auto;
+  }
+
+  .wireframeimage img, .sitemapimage img, .userstoryimage img, .mockupimages {
+    width: 75%;
+  }
+
+  .insightsleft h1, .insightsright h1 {
+    font-size: 2.5em;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .insightsleft p, .insightsright p {
+    font-size: 2em;
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .footer-left h6 {
+    font-size: 1.8rem;
+    padding: 1em 2rem;
   }
 }
 
@@ -1040,11 +1237,46 @@ input[type="button"] {
     width: 100%;
   }
 
-  .containermybio h1 {
+  .containermybio h1, .coninfo h1 {
     font-size: 2.5rem;
   }
 
   .containermybio p {
     font-size: 1.5rem;
+  }
+}
+
+/* Large Screens----------- */
+@media (min-width: 1900px) {
+  .containermybio h1 {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .containermybio h1 {
+    font-size: 3rem;
+  }
+
+  .containermybio p {
+    font-size: 2rem;
+  }
+
+  .button,
+  button,
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #FFFF;
+    background-color: #F9600A;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
