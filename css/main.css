@@ -5,7 +5,6 @@
   outline: 0;
   box-sizing: border-box;
 }
-
 html {
   width: 100%;
 }
@@ -30,37 +29,32 @@ body {
 .navbar-right {
   width: auto;
 }
-
 .navbar-right ul {
   display: flex;
   justify-content: flex-end;
 }
-
 .navbar-right li {
-  padding: 2.5em .5em;
+  padding-top:2.5em;
+  padding-right: .8rem;
   font-size: .8rem;
   font-weight: bold;
   color: #012832;
   overflow: hidden;
 }
-
 .navbar-left {
   display: flex;
   justify-content: flex-start;
 }
-
 .navbar-left img {
   padding: 1rem;
   max-width: 40%;
   margin: auto;
 }
-
 .work img {
   padding: .5rem;
   max-width: 60%;
   margin: auto;
 }
-
 .work li {
   padding: .5em;
   padding-right: 0;
@@ -125,7 +119,7 @@ body {
 }
 
 .containerintro h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #012832;
   font-family: Montserrat;
@@ -134,7 +128,7 @@ body {
 }
 
 .containerintro h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   color: #F9600A;
   font-family: Montserrat;
@@ -145,13 +139,13 @@ body {
 /*Tablets ----------- */
 @media (min-width:640px) {
   .containerintro h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     max-width: 80%;
     margin: auto;
   }
 
   .containerintro h1 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     max-width: 80%;
     margin: auto;
   }
@@ -160,11 +154,10 @@ body {
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
   .containerintro h2 {
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
-
   .containerintro h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -187,20 +180,20 @@ body {
 
 .containerdatabox img {
   width: 70%;
-  padding-top: 10%;
+  padding-top:3%;
 }
-
 .containerdatabox h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 800;
   color: #012832;
   font-family: Montserrat;
   max-width: 80%;
-  margin: auto
+  margin: auto;
+  padding-top: 5%;
+  padding-top: 5%;
 }
-
 .containerdatabox p, .containerme p {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #012832;
   line-height: 1.8;
@@ -215,11 +208,12 @@ body {
 
 .containerme h1 {
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 800;
   color: #012832;
   font-family: Montserrat;
   text-align: center;
   padding-top: 5%;
+  padding-bottom: 3%;
   max-width: 80%;
   margin: auto
 }
@@ -247,7 +241,7 @@ body {
   }
 
   .containerdatabox h2, .containerfitapp h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     max-width: 80%;
     margin: auto;
   }
@@ -257,19 +251,22 @@ body {
   }
 
   .containerme h1, .containerinfo h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
   .containerdatabox h2, .containerfitapp h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding-top: 2%;
   }
 
   .containerdatabox p, .containerfitapp p, .containerme p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    max-width: 65%;
+    width: 100%;
+    margin: auto;
   }
 
   .containerme h1, .containerinfo h1 {
@@ -399,7 +396,7 @@ a:hover {
 }
 
 .databoxcontainer h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
@@ -424,7 +421,7 @@ a:hover {
   border: 1px solid #ddd;
   border-radius: 4px;
   box-shadow: #696969;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 /*Tablets ----------- */
@@ -434,7 +431,7 @@ a:hover {
   }
 
   .databoxcontainer h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-bottom: 2%;
   }
 
@@ -446,19 +443,19 @@ a:hover {
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
-  .databoxcontainer img, {
+  .databoxcontainer img{
     width: 90%;
     height: auto;
   }
 
   .databoxcontainer h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     max-width: 75%;
     margin: auto;
   }
 
   .databoxcontainer h3 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     max-width: 75%;
     margin: auto;
   }
@@ -480,10 +477,11 @@ a:hover {
   max-width: 80%;
   margin: auto;
   padding-top: 2%;
+  width: 100%;
 }
 
 .summarycontainer p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
@@ -505,35 +503,36 @@ a:hover {
   }
 
   .summarycontainer p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     max-width: 85%;
     margin: auto;
   }
 
   .mainpoints p {
-    padding-left: 1.5em;
+    padding-left: 2em;
   }
 }
 
 /* Desktops and laptops ----------- */
 @media (min-width:1024px) {
   .summarycontainer h1 {
-    font-size: 2rem;
-    width: 85%;
+    font-size: 1.8rem;
+    width: 70%;
     max-width: 100%;
     margin: auto;
     text-align: left;
   }
 
   .summarycontainer p, .mainpoints p {
-    font-size: 1.5rem;
-    width: 85%;
+    font-size: 1.2rem;
+    width: 70%;
     max-width: 100%;
     margin: auto;
   }
 
   .mainpoints {
     width: 100%;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -555,13 +554,13 @@ a:hover {
   text-align: left;
   max-width: 80%;
   margin: auto;
-  padding-top: 2%;
+  padding-top: 1%;
 }
 
 .probsoulcontainer p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #21201F;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   line-height: 1.8;
   font-family: Merriweather;
   max-width: 80%;
@@ -577,7 +576,7 @@ a:hover {
   }
 
   .probsoulcontainer p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.5;
     max-width: 85%;
     margin: auto;
@@ -593,12 +592,14 @@ a:hover {
   }
 
   .problemleft h1, .solutionright h1 {
-    font-size: 2rem;
+    max-width: 70%;
+    font-size: 1.8rem;
   }
 
   .problemleft p, .solutionright p {
-    font-size: 1.5rem;
-    width: 85%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    width: 70%;
     max-width: 100%;
     margin: auto;
   }
@@ -630,10 +631,12 @@ a:hover {
   color: #012832;
   font-family: Montserrat;
   font-size: 1.2em;
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
+  width: 100%;
+
 }
 
 .points {
@@ -649,32 +652,26 @@ a:hover {
 
 .resanddis h3 {
   max-width: 80%;
-  margin-left: 50%;
+  width: 100%;
 }
 
 .resanddis p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
   max-width: 80%;
   margin: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.goalpoints span {
-  font-weight: 600;
 }
 
 .userflows h3 {
   max-width: 80%;
-  margin-left: 12%;
+  width: 100%;
 }
 
 .infoarch h3 {
   max-width: 80%;
-  margin-left: 10%;
+  width: 100%;
 }
 
 /*Tablets ----------- */
@@ -685,27 +682,28 @@ a:hover {
     margin: auto;
   }
 
-  .resanddis h3, .analysis h3, .goalpoints p, .analysis p {
+  .resanddis h3, .analysis h3, .resanddis p, .analysis p {
     width: 100%;
     max-width: 100%;
     margin: auto;
   }
 
   .title {
-    font-size: 1.8rem;
-    max-width: 85%;
-    margin: auto;
-  }
-
-  .subtitle {
     font-size: 1.5rem;
     max-width: 85%;
     margin: auto;
   }
 
-  .points {
+  .subtitle {
     font-size: 1.3rem;
     max-width: 85%;
+    margin: auto;
+  }
+
+  .points {
+    font-size: 1.1rem;
+    max-width: 85%;
+    width: 100%;
     margin: auto;
   }
 
@@ -714,18 +712,16 @@ a:hover {
     margin: auto;
   }
 
-  .goalpoints p {
-    font-size: 1.3rem;
+  .resanddis p {
+    font-size: 1.1rem;
   }
 
   .userflows h3 {
     max-width: 85%;
-    margin-left: 10%;
   }
 
   .infoarch h3 {
     max-width: 85%;
-    margin-left: 7%;
   }
 
   .process1, .process2, .process3 {
@@ -738,52 +734,45 @@ a:hover {
   .container {
     max-width: 100%;
     margin: auto;
-    padding-top: 2%;
   }
 
   .title {
-    font-size: 2.2rem;
-    max-width: 85%;
+    font-size: 1.8rem;
+    max-width: 70%;
     margin: auto;
   }
 
   .subtitle {
-    font-size: 2rem;
-    max-width: 85%;
+    font-size: 1.5rem;
+    max-width: 70%;
     margin: auto;
   }
 
   .points {
-    font-size: 1.5rem;
-    max-width: 85%;
+    font-size: 1.2rem;
+    max-width: 70%;
     margin: auto;
   }
 
   .resanddis, .analysis {
-    width: 85%;
+    width: 70%;
     max-width: 100%;
     margin: auto;
   }
 
-  .resanddis h3, .analysis h3, .goalpoints p, .analysis p {
-    font-size: 1.5rem;
+  .resanddis h3, .analysis h3, .resanddis p, .analysis p {
+    font-size: 1.2rem;
     width: 100%;
     max-width: 100%;
     margin: auto;
   }
 
-  .userflows h3 {
-    max-width: 85%;
-    margin-left: 7.5%;
-  }
-
-  .infoarch h3 {
-    max-width: 85%;
-    margin-left: 7.5%;
+  .userflows h3,  .infoarch h3 {
+    max-width: 70%;
   }
 
   .preferencetesting p, .userflows p {
-    width: 85%;
+    width: 70%;
     max-width: 100%;
     margin: auto;
   }
@@ -793,10 +782,9 @@ a:hover {
   }
 }
 
-.analysispoints span, .pointsmainleft span, .testing2points span {
+.analysispoints span, .pointsmainleft span {
   line-height: 1.2;
   font-family: Merriweather;
-  font-weight: 600;
   padding-top: 1%;
 }
 
@@ -871,7 +859,6 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
   .mockupimages {
     display: flex;
     flex-direction: column;
@@ -885,7 +872,7 @@ a:hover {
   }
 
   .sitemapimage, .userflowimages {
-    width: 90%;
+    width: 75%;
     margin: auto;
   }
 }
@@ -901,15 +888,15 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 0 15px;
   margin: 0 auto;
   color: #FFFF;
   background-color: #F9600A;
   text-align: center;
-  font-size: 15px;
-  line-height: 38px;
-  letter-spacing: .1rem;
+  font-size: .8em;
+  line-height: 2em;
+  letter-spacing: .05rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -936,7 +923,7 @@ input[type="button"] {
 }
 
 .insightsleft p, .insightsright p {
-  font-size: 1.1em;
+  font-size: 1em;
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
@@ -949,13 +936,13 @@ input[type="button"] {
 /*Tablets ----------- */
 @media (min-width:640px) {
   .insightsleft h1, .insightsright h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     max-width: 85%;
     margin: auto;
   }
 
   .insightsleft p, .insightsright p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     max-width: 85%;
     margin: auto;
   }
@@ -964,20 +951,20 @@ input[type="button"] {
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
   .insightsleft h1, .insightsright h1 {
-    font-size: 2.2em;
-    max-width: 85%;
+    font-size: 1.8em;
+    max-width: 70%;
     margin: auto;
   }
 
   .insightsleft p, .insightsright p {
-    font-size: 1.5em;
-    max-width: 85%;
+    font-size: 1.2em;
+    max-width: 70%;
     margin: auto;
   }
 }
 
 /* Large Screens----------- */
-@media (min-width: 1900px) {
+@media (min-width: 1440px) {
   .navbar-right li {
     font-size: 2rem;
     padding: 2em 1em;
@@ -999,18 +986,19 @@ input[type="button"] {
     overflow: hidden;
   }
 
+  .containerdatabox p, .containerfitapp p, .containerme p {
+    max-width: 60%;
+    width: 100%;
+    margin: auto;
+  }
   .summarycontainer h1 {
-    font-size: 2.5rem;
-    width: 75%;
-    max-width: 100%;
+    max-width: 65%;
     margin: auto;
     text-align: left;
   }
 
   .summarycontainer p, .mainpoints p {
-    font-size: 2rem;
-    width: 75%;
-    max-width: 100%;
+    max-width: 65%;
     margin: auto;
   }
 
@@ -1021,102 +1009,88 @@ input[type="button"] {
   }
 
   .problemleft h1, .solutionright h1 {
-    font-size: 2.5rem;
-    width: 75%;
-    max-width: 100%;
+    max-width: 65%;
     margin: auto;
   }
 
   .problemleft p, .solutionright p {
-    font-size: 2rem;
-    width: 75%;
-    max-width: 100%;
+    max-width: 65%;
     margin: auto;
   }
 
   .title {
-    font-size: 2.5rem;
-    max-width: 75%;
+    max-width: 65%;
     margin: auto;
   }
 
   .subtitle {
-    font-size: 2.2rem;
-    max-width: 75%;
+    max-width: 65%;
     margin: auto;
+    width: 100%;
   }
 
   .points {
-    font-size: 2rem;
-    max-width: 75%;
+    max-width: 65%;
     margin: auto;
-  }
-
-  .resanddis, .analysis {
-    width: 75%;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .resanddis h3, .analysis h3, .goalpoints p, .analysis p {
-    font-size: 2.2rem;
     width: 100%;
+
+  }
+
+  .resanddis h3, .analysis h3 {
+    width: 92%;
     max-width: 100%;
     margin: auto;
   }
-
-  .goalpoints p, .analysis p {
-    font-size: 2rem;
+  .resanddis p, .analysis p {
+    width: 92%;
+    max-width: 100%;
+    margin: auto;
   }
 
   .userflows h3 {
-    width: 75%;
+    width: 65%;
     max-width: 100%;
-    margin-left: 13%;
   }
 
   .infoarch h3 {
-    max-width: 75%;
-    max-width: 100%;
-    margin-left: 13%;
+    max-width: 65%;
   }
 
   .preferencetesting p, .userflows p {
-    width: 75%;
-    max-width: 100%;
+    max-width: 65%;
     margin: auto;
   }
 
-  .brandingimages1, .surveyimages img {
-    width: 40%;
-  }
-
-  .brandingimages3, .personaimages img, .userflows img, .mockupimages img {
+.personaimages img, .surveyimages img  {
     width: 60%;
-  }
-
-  .brandingimages2 {
-    width: 40%;
-  }
-
-  .brandingimages img {
-    width: 30%;
     margin: auto;
   }
 
-  .wireframeimage img, .sitemapimage img, .userstoryimage img, .mockupimages {
+   .mockupimages img {
+    width: 40%;
+    margin: auto;
+  }
+  .userflowimages {
+    width: 65%;
+    margin: auto;
+  }
+  .brandingimages, .mockupimages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 75%;
   }
-
+  .sitemapimage img, .userstoryimage img {
+    width: 65%;
+    margin: auto;
+  }
   .insightsleft h1, .insightsright h1 {
-    font-size: 2.5em;
-    max-width: 75%;
+    max-width: 65%;
     margin: auto;
   }
 
   .insightsleft p, .insightsright p {
-    font-size: 2em;
-    max-width: 75%;
+    max-width: 65%;
     margin: auto;
   }
 
@@ -1124,16 +1098,16 @@ input[type="button"] {
     font-size: 1.8rem;
     padding: 1em 2rem;
   }
+
 }
 
 /* About me page */
-.heroimage {
+.paintingimage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.heroimage img {
+.paintingimage img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
@@ -1208,16 +1182,11 @@ input[type="button"] {
 
 @media (min-width:640px) {
   .paintingimage {
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .paintingimage img {
     width: 100%;
   }
 
   .containermybio h1, .coninfo h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .containermybio p {
@@ -1238,7 +1207,7 @@ input[type="button"] {
   }
 
   .containermybio h1, .coninfo h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .containermybio p {
@@ -1247,18 +1216,10 @@ input[type="button"] {
 }
 
 /* Large Screens----------- */
-@media (min-width: 1900px) {
+@media (min-width: 1440px) {
   .containermybio h1 {
     max-width: 75%;
     margin: auto;
-  }
-
-  .containermybio h1 {
-    font-size: 3rem;
-  }
-
-  .containermybio p {
-    font-size: 2rem;
   }
 
   .button,
@@ -1273,9 +1234,9 @@ input[type="button"] {
     color: #FFFF;
     background-color: #F9600A;
     text-align: center;
-    font-size: 30px;
-    line-height: 50px;
-    letter-spacing: .3rem;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: .1rem;
     font-weight: 600;
     text-transform: uppercase;
   }
