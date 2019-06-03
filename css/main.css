@@ -5,6 +5,7 @@
   outline: 0;
   box-sizing: border-box;
 }
+
 html {
   width: 100%;
 }
@@ -29,61 +30,44 @@ body {
 .navbar-right {
   width: auto;
 }
+
 .navbar-right ul {
   display: flex;
   justify-content: flex-end;
 }
+
 .navbar-right li {
-  padding-top:2.5em;
+  padding-top: 2.5em;
   padding-right: .8rem;
   font-size: .8rem;
+  font-family: Montserrat;
   font-weight: bold;
   color: #012832;
   overflow: hidden;
 }
+
 .navbar-left {
   display: flex;
   justify-content: flex-start;
 }
+
 .navbar-left img {
   padding: 1rem;
   max-width: 40%;
   margin: auto;
-}
-.work img {
-  padding: .5rem;
-  max-width: 60%;
-  margin: auto;
-}
-.work li {
-  padding: .5em;
-  padding-right: 0;
-  font-size: .8rem;
-  font-weight: bold;
-  color: #012832;
-  overflow: hidden;
 }
 
 /*Tablets ----------- */
 @media (min-width:640px) {
   .navbar-right li {
     font-size: 1.2rem;
-    padding: 2em 1em;
+    padding: 2.3em 1em;
   }
 
-  .navbar-left img, .work img {
+  .navbar-left img {
     padding: 1rem;
     max-width: 60%;
     margin: auto;
-  }
-
-  .work li {
-    padding: .8rem 1rem;
-    padding-right: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #012832;
-    overflow: hidden;
   }
 }
 
@@ -91,22 +75,13 @@ body {
 @media (min-width: 1024px) {
   .navbar-right li {
     font-size: 1.2rem;
-    padding: 2em 1em;
+    padding: 2.6em 1em;
   }
 
   .navbar-left img {
     padding: 1rem 1.5rem;
     max-width: 90%;
     margin: auto;
-  }
-
-  .work li {
-    padding: 1.8rem 1rem;
-    padding-right: 2rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #012832;
-    overflow: hidden;
   }
 }
 
@@ -156,6 +131,7 @@ body {
   .containerintro h2 {
     font-size: 2.25rem;
   }
+
   .containerintro h1 {
     font-size: 2.5rem;
   }
@@ -180,8 +156,9 @@ body {
 
 .containerdatabox img {
   width: 70%;
-  padding-top:3%;
+  padding-top: 3%;
 }
+
 .containerdatabox h2 {
   font-size: 1.3rem;
   font-weight: 800;
@@ -192,6 +169,7 @@ body {
   padding-top: 5%;
   padding-top: 5%;
 }
+
 .containerdatabox p, .containerme p {
   font-size: 1rem;
   font-weight: 400;
@@ -273,7 +251,7 @@ body {
     font-size: 2.5rem;
   }
 
-  .containerdatabox img, .containerfitapp img {
+  .containerdatabox img {
     width: 50%;
   }
 }
@@ -443,7 +421,7 @@ a:hover {
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
-  .databoxcontainer img{
+  .databoxcontainer img {
     width: 90%;
     height: auto;
   }
@@ -581,27 +559,39 @@ a:hover {
     max-width: 85%;
     margin: auto;
   }
+
+  .leftright {
+    max-width: 65%;
+    flex-direction: row;
+    display: flex;
+  }
 }
 
 /* Desktops and laptops ----------- */
 @media (min-width:1024px) {
-  .problemleft, .solutionright {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
+  .probsoulcontainer {
+    flex-direction: row;
+  }
+
+  .solutionright {
+    max-width: 40%;
+    margin-left: auto;
+  }
+
+  .problemleft {
+    max-width: 35%;
+    margin-left: auto;
   }
 
   .problemleft h1, .solutionright h1 {
-    max-width: 70%;
     font-size: 1.8rem;
   }
 
   .problemleft p, .solutionright p {
     font-size: 1.2rem;
     line-height: 1.8;
-    width: 70%;
-    max-width: 100%;
-    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
 
@@ -621,6 +611,7 @@ a:hover {
   color: #F9600A;
   font-family: Montserrat;
   font-size: 1.3rem;
+  font-weight: 700;
   padding-top: 2%;
   padding-bottom: 2%;
   max-width: 80%;
@@ -630,13 +621,13 @@ a:hover {
 .subtitle {
   color: #012832;
   font-family: Montserrat;
+  font-weight: 600;
   font-size: 1.2em;
   padding-top: 2%;
   padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
   width: 100%;
-
 }
 
 .points {
@@ -761,13 +752,13 @@ a:hover {
   }
 
   .resanddis h3, .analysis h3, .resanddis p, .analysis p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 100%;
     max-width: 100%;
     margin: auto;
   }
 
-  .userflows h3,  .infoarch h3 {
+  .userflows h3, .infoarch h3 {
     max-width: 70%;
   }
 
@@ -777,7 +768,7 @@ a:hover {
     margin: auto;
   }
 
-  .process1, .process2, .process3 {
+  .process1, .process2, .process3, .outside {
     background-color: #f2f2f2;
   }
 }
@@ -859,6 +850,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .mockupimages {
     display: flex;
     flex-direction: column;
@@ -866,13 +858,16 @@ a:hover {
     margin-right: auto;
     align-content: center;
   }
+  .surveyimages img, .personaimages img{
+    max-width: 40%;
+  }
 
-  .surveyimages img, .personaimages img, .userstoryimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
-    max-width: 90%;
+  .userstoryimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+    max-width: 70%;
   }
 
   .sitemapimage, .userflowimages {
-    width: 75%;
+    width: 70%;
     margin: auto;
   }
 }
@@ -950,16 +945,45 @@ input[type="button"] {
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
+  .mockup .button {
+    margin-bottom: 2%;
+    margin-top: 2%;
+  }
+
+  .insightscontainer, .probsoulcontainer {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 2%;
+  }
+
+  .insightscontainer {
+    width: 78%;
+  }
+
+  .probsoulcontainer {
+    width: 86%;
+  }
+
+  .insightsleft, .problemleft {
+    max-width: 43%;
+    margin-left: auto;
+    float: left;
+  }
+
+  .insightsright, .solutionright {
+    max-width: 43%;
+    margin-right: auto;
+    float: right;
+  }
+
   .insightsleft h1, .insightsright h1 {
     font-size: 1.8em;
-    max-width: 70%;
-    margin: auto;
   }
 
   .insightsleft p, .insightsright p {
     font-size: 1.2em;
-    max-width: 70%;
-    margin: auto;
   }
 }
 
@@ -977,20 +1001,12 @@ input[type="button"] {
     margin: auto;
   }
 
-  .work li {
-    padding: 1.2em 1em;
-    padding-right: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #012832;
-    overflow: hidden;
-  }
-
   .containerdatabox p, .containerfitapp p, .containerme p {
     max-width: 60%;
     width: 100%;
     margin: auto;
   }
+
   .summarycontainer h1 {
     max-width: 65%;
     margin: auto;
@@ -1002,20 +1018,14 @@ input[type="button"] {
     margin: auto;
   }
 
-  .problemleft, .solutionright {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
+  .solutionright {
+    max-width: 40%;
+    margin-left: auto;
   }
 
-  .problemleft h1, .solutionright h1 {
-    max-width: 65%;
-    margin: auto;
-  }
-
-  .problemleft p, .solutionright p {
-    max-width: 65%;
-    margin: auto;
+  .problemleft {
+    max-width: 30%;
+    margin-left: auto;
   }
 
   .title {
@@ -1033,7 +1043,6 @@ input[type="button"] {
     max-width: 65%;
     margin: auto;
     width: 100%;
-
   }
 
   .resanddis h3, .analysis h3 {
@@ -1041,6 +1050,7 @@ input[type="button"] {
     max-width: 100%;
     margin: auto;
   }
+
   .resanddis p, .analysis p {
     width: 92%;
     max-width: 100%;
@@ -1061,44 +1071,46 @@ input[type="button"] {
     margin: auto;
   }
 
-.personaimages img, .surveyimages img  {
+  .personaimages img, .surveyimages img {
     width: 60%;
     margin: auto;
   }
 
-   .mockupimages img {
+  .mockupimages img {
     width: 40%;
     margin: auto;
   }
+
   .userflowimages {
     width: 65%;
     margin: auto;
   }
+
   .brandingimages, .mockupimages {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 75%;
   }
+
   .sitemapimage img, .userstoryimage img {
     width: 65%;
     margin: auto;
   }
-  .insightsleft h1, .insightsright h1 {
-    max-width: 65%;
-    margin: auto;
+
+  .insightsleft {
+    margin-left: auto;
   }
 
-  .insightsleft p, .insightsright p {
-    max-width: 65%;
-    margin: auto;
+  .insightsright {
+    margin-left: auto;
   }
 
   .footer-left h6 {
-    font-size: 1.8rem;
-    padding: 1em 2rem;
+    font-size: 1.6rem;
+    padding-left: 2em;
+    padding-top: 2.5em;
   }
-
 }
 
 /* About me page */
@@ -1107,6 +1119,7 @@ input[type="button"] {
   flex-direction: column;
   align-items: center;
 }
+
 .paintingimage img {
   margin-left: auto;
   margin-right: auto;
