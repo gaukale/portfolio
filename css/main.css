@@ -66,7 +66,8 @@ body {
 
   .navbar-left img {
     padding: 1rem;
-    max-width: 60%;
+    width: 60%;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -74,13 +75,14 @@ body {
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
   .navbar-right li {
-    font-size: 1.2rem;
-    padding: 2.6em 1em;
+    font-size: 1.5rem;
+    padding: 2em 1em;
   }
 
   .navbar-left img {
-    padding: 1rem 1.5rem;
-    max-width: 90%;
+    padding: 1rem 2rem;
+    width: 60%;
+    max-width: 100%;
     margin: auto;
   }
 }
@@ -251,6 +253,11 @@ body {
     font-size: 2.5rem;
   }
 
+  .containerme h1 {
+    padding-top: 2%;
+    padding-bottom: 0;
+  }
+
   .containerdatabox img {
     width: 50%;
   }
@@ -374,7 +381,7 @@ a:hover {
 }
 
 .databoxcontainer h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
@@ -384,7 +391,7 @@ a:hover {
 }
 
 .databoxcontainer h3 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 600;
   color: #012832;
   font-family: Montserrat;
@@ -433,7 +440,7 @@ a:hover {
   }
 
   .databoxcontainer h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     max-width: 75%;
     margin: auto;
   }
@@ -452,10 +459,11 @@ a:hover {
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
-  max-width: 80%;
-  margin: auto;
   padding-top: 2%;
-  width: 100%;
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+  text-align: left;
 }
 
 .summarycontainer p {
@@ -463,9 +471,11 @@ a:hover {
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
-  max-width: 80%;
-  margin: auto;
+  width: 80%;
   padding-bottom: 2%;
+  max-width: 100%;
+  margin: auto;
+  text-align: left;
 }
 
 .mainpoints span {
@@ -476,18 +486,12 @@ a:hover {
 @media (min-width:640px) {
   .summarycontainer h1 {
     font-size: 1.5rem;
-    max-width: 85%;
-    margin: auto;
+    width: 85%;
   }
 
   .summarycontainer p {
     font-size: 1.1rem;
-    max-width: 85%;
-    margin: auto;
-  }
-
-  .mainpoints p {
-    padding-left: 2em;
+    width: 85%;
   }
 }
 
@@ -496,22 +500,11 @@ a:hover {
   .summarycontainer h1 {
     font-size: 1.8rem;
     width: 70%;
-    max-width: 100%;
-    margin: auto;
-    text-align: left;
   }
 
-  .summarycontainer p, .mainpoints p {
-    font-size: 1.2rem;
+  .summarycontainer p {
+    font-size: 1.5rem;
     width: 70%;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .mainpoints {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
   }
 }
 
@@ -529,9 +522,10 @@ a:hover {
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
-  text-align: left;
-  max-width: 80%;
+  width: 80%;
+  max-width: 100%;
   margin: auto;
+  text-align: left;
   padding-top: 1%;
 }
 
@@ -541,57 +535,29 @@ a:hover {
   padding-bottom: 1%;
   line-height: 1.8;
   font-family: Merriweather;
-  max-width: 80%;
+  width: 80%;
+  max-width: 100%;
   margin: auto;
+  text-align: left;
 }
 
 /*Tablets ----------- */
 @media (min-width:640px) {
   .probsoulcontainer h1 {
     font-size: 1.5rem;
-    max-width: 85%;
-    margin: auto;
+    width: 85%;
   }
 
   .probsoulcontainer p {
     font-size: 1.1rem;
     line-height: 1.5;
-    max-width: 85%;
-    margin: auto;
+    width: 85%;
   }
 
   .leftright {
     max-width: 65%;
     flex-direction: row;
     display: flex;
-  }
-}
-
-/* Desktops and laptops ----------- */
-@media (min-width:1024px) {
-  .probsoulcontainer {
-    flex-direction: row;
-  }
-
-  .solutionright {
-    max-width: 40%;
-    margin-left: auto;
-  }
-
-  .problemleft {
-    max-width: 35%;
-    margin-left: auto;
-  }
-
-  .problemleft h1, .solutionright h1 {
-    font-size: 1.8rem;
-  }
-
-  .problemleft p, .solutionright p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    padding-top: 2%;
-    padding-bottom: 2%;
   }
 }
 
@@ -641,18 +607,19 @@ a:hover {
   margin: auto;
 }
 
-.resanddis h3 {
+.resanddis h3, .analysis h3 {
   max-width: 80%;
   width: 100%;
 }
 
-.resanddis p {
+.resanddis p, .analysis p {
   font-size: 1rem;
   color: #21201F;
   line-height: 1.8;
   font-family: Merriweather;
   max-width: 80%;
   margin: auto;
+  width: 100%;
 }
 
 .userflows h3 {
@@ -667,18 +634,6 @@ a:hover {
 
 /*Tablets ----------- */
 @media (min-width:640px) {
-  .resanddis, .analysis {
-    width: 85%;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .resanddis h3, .analysis h3, .resanddis p, .analysis p {
-    width: 100%;
-    max-width: 100%;
-    margin: auto;
-  }
-
   .title {
     font-size: 1.5rem;
     max-width: 85%;
@@ -699,6 +654,18 @@ a:hover {
   }
 
   .container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .resanddis, .analysis {
+    width: 85%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .resanddis h3, .analysis h3, .resanddis p, .analysis p {
+    width: 100%;
     max-width: 100%;
     margin: auto;
   }
@@ -759,7 +726,8 @@ a:hover {
   }
 
   .userflows h3, .infoarch h3 {
-    max-width: 70%;
+    width: 70%;
+    max-width: 100%;
   }
 
   .preferencetesting p, .userflows p {
@@ -773,7 +741,7 @@ a:hover {
   }
 }
 
-.analysispoints span, .pointsmainleft span {
+.pointsmainleft span {
   line-height: 1.2;
   font-family: Merriweather;
   padding-top: 1%;
@@ -858,16 +826,47 @@ a:hover {
     margin-right: auto;
     align-content: center;
   }
-  .surveyimages img, .personaimages img{
-    max-width: 40%;
+
+  .surveyimages img, .personaimages img {
+    max-width: 50%;
   }
 
   .userstoryimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
     max-width: 70%;
   }
 
-  .sitemapimage, .userflowimages {
+  .sitemapimage, .userflowimages, .userstoryimage {
     width: 70%;
+    margin: auto;
+  }
+}
+
+/* Large Screens----------- */
+@media (min-width: 1440px) {
+  .personaimages img, .surveyimages img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .mockupimages img {
+    width: 45%;
+    margin: auto;
+  }
+
+  .userflowimages {
+    width: 65%;
+    margin: auto;
+  }
+
+  .brandingimages, .mockupimages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+
+  .sitemapimage img, .userstoryimage {
+    width: 65%;
     margin: auto;
   }
 }
@@ -896,7 +895,7 @@ input[type="button"] {
   text-transform: uppercase;
 }
 
-.insightscontainer {
+#insightscontainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -950,7 +949,7 @@ input[type="button"] {
     margin-top: 2%;
   }
 
-  .insightscontainer, .probsoulcontainer {
+  #insightscontainer, .probsoulcontainer {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -958,7 +957,7 @@ input[type="button"] {
     padding-top: 2%;
   }
 
-  .insightscontainer {
+  #insightscontainer {
     width: 78%;
   }
 
@@ -967,7 +966,7 @@ input[type="button"] {
   }
 
   .insightsleft, .problemleft {
-    max-width: 43%;
+    max-width: 45%;
     margin-left: auto;
     float: left;
   }
@@ -978,29 +977,28 @@ input[type="button"] {
     float: right;
   }
 
+  .problemleft h1, .solutionright h1 {
+    font-size: 1.8rem;
+  }
+
+  .problemleft p, .solutionright p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
   .insightsleft h1, .insightsright h1 {
     font-size: 1.8em;
   }
 
   .insightsleft p, .insightsright p {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 }
 
 /* Large Screens----------- */
 @media (min-width: 1440px) {
-  .navbar-right li {
-    font-size: 2rem;
-    padding: 2em 1em;
-  }
-
-  .navbar-left img {
-    padding: 1rem 2rem;
-    width: 80%;
-    max-width: 100%;
-    margin: auto;
-  }
-
   .containerdatabox p, .containerfitapp p, .containerme p {
     max-width: 60%;
     width: 100%;
@@ -1013,7 +1011,7 @@ input[type="button"] {
     text-align: left;
   }
 
-  .summarycontainer p, .mainpoints p {
+  .summarycontainer p {
     max-width: 65%;
     margin: auto;
   }
@@ -1060,41 +1058,17 @@ input[type="button"] {
   .userflows h3 {
     width: 65%;
     max-width: 100%;
+    margin: auto;
   }
 
   .infoarch h3 {
-    max-width: 65%;
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
   }
 
   .preferencetesting p, .userflows p {
     max-width: 65%;
-    margin: auto;
-  }
-
-  .personaimages img, .surveyimages img {
-    width: 60%;
-    margin: auto;
-  }
-
-  .mockupimages img {
-    width: 40%;
-    margin: auto;
-  }
-
-  .userflowimages {
-    width: 65%;
-    margin: auto;
-  }
-
-  .brandingimages, .mockupimages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 75%;
-  }
-
-  .sitemapimage img, .userstoryimage img {
-    width: 65%;
     margin: auto;
   }
 
@@ -1161,7 +1135,7 @@ input[type="button"] {
   text-align: left;
 }
 
-.contactinfo {
+.coninfo {
   display: flex;
   flex-direction: column;
   align-items: center;
