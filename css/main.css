@@ -1228,3 +1228,123 @@ input[type="button"] {
     text-transform: uppercase;
   }
 }
+/* contact me page */
+.contact-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.contact-box h2{
+  width:70%;
+  max-width: 100%;
+  margin:auto;
+  font-size: 1.5em;
+  font-family: Montserrat;
+  font-weight: 600;
+  color:#F9600A;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.contact-box p{
+  width: 70%;
+  max-width: 100%;
+  margin:auto;
+  font-size: 1em;
+  font-family: Merriweather;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 1.8;
+  text-align: center;
+}
+.contactform{
+  width: 80%;
+  max-width: 100%;
+  margin:auto;
+  }
+.formfields{
+  width: 100%;
+  max-width: 100%;
+  margin:auto;
+}
+.formtitle{
+  font-size: 1em;
+  font-family: Merriweather;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.contact {
+  margin-top: 2%;
+}
+
+@media (min-width:640px) {
+  .contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .contact-box h2{
+    width: 70%;
+    max-width: 100%;
+    margin:auto;
+    font-size: 1.8em;
+    padding-top: 5%;
+    }
+  .contact-box p{
+    font-size: 1.3em;
+    width: 70%;
+    max-width: 100%;
+    margin:auto;
+    letter-spacing: .1em;
+  }
+  .coninfo{
+    padding-top: 5%;
+  }
+  .formtitle{
+    font-size: 1.3em;
+  }
+    .cont-btn {
+    width: 30%;
+    max-width: 100%;
+    margin:auto;
+    margin-top: 2%;
+  }
+  .containerbottom{
+    padding-top: 10%;
+  }
+
+}
+  @media (min-width:1024px) {
+
+    .contact-box h2{
+      width: 65%;
+      max-width: 100%;
+      margin:auto;
+      font-size: 2em;
+      padding-top: 5%;
+      }
+    .contact-box p{
+      font-size: 1.5em;
+      width: 65%;
+      max-width: 100%;
+      margin:auto;
+      letter-spacing: .1em;
+    }
+    .formtitle{
+      width: 65%;
+      max-width: 100%;
+      margin:auto;
+    }
+    .coninfo{
+      width: 65%;
+      max-width: 100%;
+      margin:auto;
+    }
+    .formtitle{
+      font-size: 1.5em;
+    }
+  }
+  }

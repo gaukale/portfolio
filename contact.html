@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141489331-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141489331-1');
+  </script>
+
   <!--Meta -->
   <meta charset='UTF-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,48 +26,48 @@
 
 <body>
   <header class="containertop">
-
     <div class="navbar-left"><a href=index.html> <img src="images/logo.png"></a></div>
-
-
     <div class="navbar-right">
       <ul>
-        <li>
-          <a href="project.html">Work</a>
-        </li>
-
-        <li>
-          <a href="aboutme.html">About</a>
-        </li>
-
-        <li>
-          <a href="">Resume</a>
-        </li>
-
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
+        <li><a href="project.html">Work</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="resources/UXDesignerResume.pdf">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-
   </header>
 
-  <!-- About Me hero image -->
-  <section class ="heroimage">
-      <div class="paintingimage"><a href=index.html> <img src="images/image1.jpg"></a></div>
+  <section class="contact-box">
+    <div>
+      <h2>GET IN TOUCH</h2>
+      <p>I hope you liked what you’ve seen.If you’ve got a project we can work with, or something funny, hilarious, or brililiant to share. I’d like to hear from you. Cheers!
+      </p>
+    </div>
   </section>
-
-
-  <!-- About Me -->
 
   <section class="contactinfo" id="contact info">
     <div class="container coninfo">
       <h1>Lets get acquainted!</h1>
-      <a class="button" href="contact.html">Contact Me</a>
-      <a class="button" href="aboutme.html">Resume</a>
-    </div>
+      <!--FORM-->
+      <div class="contactform">
+        <form action="https://getsimpleform.com/messages?form_api_token=f18a3a2315fa28a9cab7ec9bcea44c26" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='http://saltfish880.com/thank-you.html>' />
 
+          <!-- all your input fields here.... -->
+          <p class="formtitle">Your Name:</p>
+          <input type='text' name='Name' style='height:35px' class="formfields" />
+          <p class="formtitle">Your Email:</p>
+          <input type='text' name='Email' style='height:35px' class="formfields" />
+          <p class="formtitle">Your Message Here:</p>
+          <textarea cols='50' rows='20' name='Message' style='height:180px' class="formfields">
+                                  </textarea>
+        </form>
+      </div>
+      <a class="contact button" type='submit' href="index.html">Send Message</a>
+    </div>
   </section>
+
   <!-- Footer Section -->
   <footer class="containerbottom">
     <div class="footer-left">
