@@ -5,7 +5,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141489331-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-141489331-1');
@@ -46,25 +49,22 @@
   </section>
 
   <section class="contactinfo" id="contact info">
-    <div class="container coninfo">
+    <div class="container-coninfo">
       <h1>Lets get acquainted!</h1>
       <!--FORM-->
-      <div class="contactform">
-        <form action="https://getsimpleform.com/messages?form_api_token=f18a3a2315fa28a9cab7ec9bcea44c26" method="post">
-          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-          <input type='hidden' name='redirect_to' value='http://saltfish880.com/thank-you.html>' />
+      <form method="POST" action="https://formspree.io/gaukale@gmail.com">
+        <!-- all your input fields here.... -->
+        <p class="formtitle">Name</p>
+        <input type='text' name='Name' style='height:35px' class="formfields" />
+        <p class="formtitle">Email</p>
+        <input type='text' name='Email' style='height:35px' class="formfields" />
+        <p class="formtitle">Message Here</p>
+        <textarea cols='50' rows='20' name='Message' style='height:180px' class="formfields">
+          </textarea>
+        <div class="con-btn"><button type="submit">Send Message</button></div>
+      </form>
 
-          <!-- all your input fields here.... -->
-          <p class="formtitle">Your Name:</p>
-          <input type='text' name='Name' style='height:35px' class="formfields" />
-          <p class="formtitle">Your Email:</p>
-          <input type='text' name='Email' style='height:35px' class="formfields" />
-          <p class="formtitle">Your Message Here:</p>
-          <textarea cols='50' rows='20' name='Message' style='height:180px' class="formfields">
-                                  </textarea>
-        </form>
-      </div>
-      <a class="contact button" type='submit' href="index.html">Send Message</a>
+
     </div>
   </section>
 

@@ -1228,28 +1228,32 @@ input[type="button"] {
     text-transform: uppercase;
   }
 }
+
 /* contact me page */
-.contact-box{
+.contact-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: auto;
 }
-.contact-box h2{
-  width:70%;
+
+.contact-box h2 {
+  width: 70%;
   max-width: 100%;
-  margin:auto;
+  margin: auto;
   font-size: 1.5em;
   font-family: Montserrat;
   font-weight: 600;
-  color:#F9600A;
+  color: #F9600A;
   padding-bottom: 2%;
   text-align: center;
 }
-.contact-box p{
+
+.contact-box p {
   width: 70%;
   max-width: 100%;
-  margin:auto;
+  margin: auto;
   font-size: 1em;
   font-family: Merriweather;
   padding-top: 2%;
@@ -1257,94 +1261,128 @@ input[type="button"] {
   line-height: 1.8;
   text-align: center;
 }
-.contactform{
+
+.container-coninfo h1 {
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #F9600A;
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 2%;
   width: 80%;
   max-width: 100%;
-  margin:auto;
-  }
-.formfields{
+  margin: auto;
+}
+
+form {
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.formfields {
   width: 100%;
   max-width: 100%;
-  margin:auto;
+  margin: auto;
 }
-.formtitle{
+
+.formtitle {
   font-size: 1em;
   font-family: Merriweather;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
 }
-.contact {
-  margin-top: 2%;
+
+.con-btn {
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2%;
 }
 
 @media (min-width:640px) {
-  .contact-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
-  .contact-box h2{
+  .contact-box h2 {
     width: 70%;
     max-width: 100%;
-    margin:auto;
+    margin: auto;
     font-size: 1.8em;
     padding-top: 5%;
-    }
-  .contact-box p{
+  }
+
+  .contact-box p {
     font-size: 1.3em;
     width: 70%;
     max-width: 100%;
-    margin:auto;
+    margin: auto;
     letter-spacing: .1em;
   }
-  .coninfo{
-    padding-top: 5%;
-  }
-  .formtitle{
-    font-size: 1.3em;
-  }
-    .cont-btn {
-    width: 30%;
+
+  .container-coninfo h1 {
+    font-size: 1.6em;
+    width: 70%;
     max-width: 100%;
-    margin:auto;
-    margin-top: 2%;
+    margin: auto;
   }
-  .containerbottom{
+
+  form {
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .con-btn {
+    width: 70%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .containerbottom {
     padding-top: 10%;
   }
-
 }
-  @media (min-width:1024px) {
 
-    .contact-box h2{
-      width: 65%;
-      max-width: 100%;
-      margin:auto;
-      font-size: 2em;
-      padding-top: 5%;
-      }
-    .contact-box p{
-      font-size: 1.5em;
-      width: 65%;
-      max-width: 100%;
-      margin:auto;
-      letter-spacing: .1em;
-    }
-    .formtitle{
-      width: 65%;
-      max-width: 100%;
-      margin:auto;
-    }
-    .coninfo{
-      width: 65%;
-      max-width: 100%;
-      margin:auto;
-    }
-    .formtitle{
-      font-size: 1.5em;
-    }
+@media (min-width:1024px) {
+  .contact-box h2 {
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
+    font-size: 2em;
   }
+
+  .contact-box p {
+    font-size: 1.5em;
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
   }
+
+  .formtitle {
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  form {
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .formtitle {
+    font-size: 1.3em;
+  }
+
+  .con-btn {
+    width: 65%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .formtitle {
+    font-size: 1.3em;
+  }
+}
+}
