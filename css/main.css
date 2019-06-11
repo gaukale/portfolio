@@ -80,6 +80,7 @@ body {
   .navbar-right li {
     font-size: 1.3rem;
     padding-top: 3em;
+    padding-right: 3.5rem;
   }
   .navbar-left img {
     padding-top:2rem;
@@ -114,20 +115,19 @@ body {
   font-family: Montserrat;
 }
 .containerintro span {
+  width:100%;
+  left: 0;
   font-size:1.2rem;
   font-weight: 600;
   color: #F9600A;
 }
-.rw-words{
-  display: inline;
-	text-indent:8px;
-  }
+
   .rw-words p{
     max-width: 30%;
     font-family:Montserrat;
     font-size: 1.6rem;
     text-align: center;
-
+    padding-top: 2%;
   }
 .rw-words span{
   animation: topToBottom 12.5s linear infinite 0s;
@@ -236,7 +236,6 @@ body {
   width: 100%;
   height: auto;
   }
-
 .containerinfo {
   background-color: #FFFF;
 }
@@ -244,8 +243,7 @@ body {
   width: 80%;
 }
 #logo{
-  width: 50%;
-
+  width:40%;
 }
 .containerdatabox h2 {
   font-size: 1.1rem;
@@ -314,6 +312,9 @@ body {
   .containerme h1, .containerinfo h1 {
     font-size: 2rem;
   }
+  #logo{
+    width:30%;
+  }
 }
 
 /* Desktops and laptops ----------- */
@@ -351,55 +352,49 @@ body {
   justify-content: space-between;
 }
 
-.footer-right {
+.footer-left {
   width: auto;
 }
-
-.footer-right ul {
+.footer-left ul {
   display: flex;
   justify-content: flex-end;
 }
-
-.footer-right li {
+.footer-left li {
   padding-top: 2em;
-  padding-left: 1rem;
+  padding-left:.5rem;
   overflow: hidden;
 }
-
-.footer-right img {
-  width: 40%;
+.footer-left img {
+  width: 30%;
   height: auto;
 }
 
-.footer-left {
+.footer-right {
   display: flex;
   justify-content: flex-start;
 }
 
-.footer-left h6 {
-  font-size: .3em;
-  font-weight: 600;
+.footer-right h6 {
+  font-size: .4em;
+  font-weight:400;
   color: #21201F;
   font-family: Montserrat;
   padding-top: 2.5rem;
-  padding-right: .8rem;
 }
 
 /*Tablets ----------- */
 @media (min-width:640px) {
-  .footer-right li {
-    padding-left: 3rem;
-    padding-bottom: 2rem;
+  .footer-left li {
+    padding-left:5rem;
     overflow: hidden;
   }
 
-  .footer-left h6 {
-    font-size: 1.3em;
-    padding-bottom: 2rem;
+  .footer-right h6 {
+    font-size: 1em;
     padding-right: 3rem;
       }
 
-  .footer-right img {
+  .footer-left img {
     width: 75%;
     height: auto;
   }
@@ -407,16 +402,19 @@ body {
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
-  .footer-right li {
+  .footer-left li {
     padding-left:5rem;
-    padding-top: 3rem;
     overflow: hidden;
   }
-  .footer-left h6 {
-    font-size: 1.1rem;
-    padding-top: 3.5rem;
-    padding-right: 2rem;
-    font-weight:300;
+
+  .footer-right h6 {
+    font-size: 1em;
+    padding-right: 3rem;
+      }
+
+  .footer-left img {
+    width: 75%;
+    height: auto;
   }
 }
 .containerdatabox, .containerme, .button {
@@ -874,6 +872,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 65%;
   }
 
   .mockupimages {
@@ -883,12 +882,10 @@ a:hover {
     margin-right: auto;
     align-content: center;
   }
-
-  .surveyimages img, .personaimages img {
-    max-width: 50%;
+  .surveyimages img, .personaimages img{
+    max-width: 40%;
   }
-
-  .userstoryimage img, .wireframeimage img, .brandingimages img, .mockupimages img {
+    .userstoryimage img, .wireframeimage img, .brandingimages img, .mockupimages img{
     max-width: 70%;
   }
 
@@ -1158,7 +1155,6 @@ input[type="button"] {
     padding-left: 2em;
     padding-top: 2.5em;
   }
-
 }
 
 /* About me page */
@@ -1169,9 +1165,10 @@ input[type="button"] {
 }
 
 .paintingimage img {
+
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2%;
+  margin-top:15%;
   margin-bottom: 2%;
   width: 100%;
 }
@@ -1190,7 +1187,8 @@ input[type="button"] {
   color: #F9600A;
   font-family: Montserrat;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   max-width: 80%;
   margin: auto;
 }
@@ -1200,13 +1198,16 @@ input[type="button"] {
   color: #012832;
   line-height: 1.8;
   font-family: Montserrat;
-  padding-top: 5%;
-  padding-bottom: 5%;
   max-width: 80%;
   width: 80%;
   max-width: 1024px;
   margin: auto;
   text-align: left;
+  padding-bottom: 2%;
+}
+.containermybio span{
+  color: #0093fd;
+  padding-bottom:10%;
 }
 
 .coninfo {
@@ -1228,7 +1229,6 @@ input[type="button"] {
   max-width: 1024px;
   margin: auto;
 }
-
 .coninfobutton, .myresume {
   display: flex;
   flex-direction: row;
@@ -1238,7 +1238,7 @@ input[type="button"] {
 }
 
 .coninfobutton a {
-  background-color: #21201F;
+  background-color: #0093fd;
 }
 
 @media (min-width:640px) {
@@ -1304,6 +1304,8 @@ input[type="button"] {
 }
 
 /* contact me page */
+
+
 .contact-box {
   display: flex;
   flex-direction: column;
@@ -1316,10 +1318,11 @@ input[type="button"] {
   width: 70%;
   max-width: 100%;
   margin: auto;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: Montserrat;
   font-weight: 600;
   color: #F9600A;
+  padding-top: 5%;
   padding-bottom: 2%;
   text-align: center;
 }
@@ -1337,7 +1340,7 @@ input[type="button"] {
 }
 
 .container-coninfo h1 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 800;
   color: #F9600A;
   font-family: Montserrat;
@@ -1364,7 +1367,6 @@ form {
 .formtitle {
   font-size: 1em;
   font-family: Merriweather;
-  text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -1428,12 +1430,6 @@ form {
 
   .contact-box p {
     font-size: 1.5em;
-    width: 65%;
-    max-width: 100%;
-    margin: auto;
-  }
-
-  .formtitle {
     width: 65%;
     max-width: 100%;
     margin: auto;
