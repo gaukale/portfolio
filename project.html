@@ -95,10 +95,10 @@
     <section class="analysis container">
       <h3 class="subtitle">Competitive Analysis</h3>
       <p class="points">My competitive analysis revealed that a new competitor entering the cloud storage and organization app market should:</p>
-      <p class="points"><span>- Adopt competitors’ strengths and improve on their weaknesses</span></p><br>
-      <p class="points"><span>- Introduce new features.</span></p><br>
-      <p class="points"><span>- Be generous with file size</span></p><br>
-      <p class="points"><span>- Go strong on backup features</span></p><br>
+      <p class="points"><span>- Adopt competitors’ strengths and improve on their weaknesses</span></p>
+      <p class="points"><span>- Introduce new features.</span></p>
+      <p class="points"><span>- Be generous with file size</span></p>
+      <p class="points"><span>- Go strong on backup features</span></p>
       <p class="points">Look at <a href="resources/CompetitiveAnalysis.pdf">Competitive Analysis Details</a></p>
     </section>
 
@@ -111,12 +111,57 @@
             Look at the <a href="https://docs.google.com/forms/d/1XeoyXV3bO3FSrnY6a_Eajp4to2nmfpgUvhJIflMs29w/viewanalytics" class="btn">Survey Questions</a></p>
         </div>
         </div>
-        <div class="pointsmainleft">
-          <p class="points"><span>More than 70% people are familiar with cloud storage technology.</span></p><br>
-          <div class="surveyimages"><img src="images/usersurvey1.png "></div>
-          <p class="points"><span>More than 60% of users use it for backups, storing their files, documents, photos, videos etc.</span></p>
-          <div class="surveyimages"><img src="images/usersurvey2.png">
-          </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <div class="image-text">
+      <p class="points"><span>Have you ever used or currently store any data or files using a Cloud Based Storage service such as Dropbox or iCloud?</span></p>
+        <figure class="chart-container">
+            <canvas id="pieChart1" width="400" height="400">
+            </canvas>
+            <script>
+                new Chart(document.getElementById("pieChart1"), {
+                    type: "pie",
+                    data: {
+                        "labels": ["Yes", "No"],
+                        datasets: [{
+                            data: [73.7, 26.3],
+                            backgroundColor: ["blue", "red"]
+                        }]
+                    },
+                    options: {
+                        legend: { display: true },
+                        responsive: false
+                    }
+                });
+            </script>
+        </figure>
+        <p class="points"><span>More than 70% of survey participants are familiar with cloud storage technology.</span></p>
+    </div>
+
+        <div class="image-text">
+          <p class="points"><span>Select which type of data or files you currently store, or would consider storing using a Cloud Based Storage service?</span></p>
+            <figure class="chart-container">
+                <canvas id="pieChart2" width="400" height="400">
+                </canvas>
+                <script>
+                    new Chart(document.getElementById("pieChart2"), {
+                        type: "pie",
+                        data: {
+                            "labels": ["Backups", "Bills", "Documents"],
+                            datasets: [{
+                                data: [60, 20, 20],
+                                backgroundColor: ["blue", "green", "orange"]
+                            }]
+                        },
+                        options: {
+                            legend: { display: true },
+                            responsive: false
+                          }
+                    });
+                </script>
+            </figure>
+            <p class="points"><span>More than 60% of users use it for backups, storing their files, documents, photos, videos etc.</span></p>
+        </div>
       </section>
     </section>
 

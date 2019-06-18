@@ -771,7 +771,7 @@ a:hover {
   color: #21201F;
   font-family: Merriweather;
   line-height: 1.5;
-  padding-top: 3%;
+  padding-top:1%;
   padding-bottom: 1%;
   max-width: 80%;
   margin: auto;
@@ -911,12 +911,6 @@ a:hover {
   .process1, .process2, .process3, .outside {
     background-color: #f2f2f2;
   }
-}
-
-.pointsmainleft span {
-  line-height: 1.2;
-  font-family: Merriweather;
-  padding-top: 1%;
 }
 
 .surveyimages, .personaimages, .userstoryimage, .userflowimages, .sitemapimage, .wireframeimage, .brandingimages, .mockupimages, .branding, .ptimages {
@@ -1067,7 +1061,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   border-radius: 6px;
-  padding: 8px 15px;
+  padding: 5px 12px;
   margin: 0 auto;
   color: #FFFF;
   background-color: #F9600A;
@@ -1130,7 +1124,7 @@ input[type="button"] {
   input[type="submit"],
   input[type="reset"],
   input[type="button"] {
-    padding: 0.5em 2em;
+    padding: 10px 12px;
   }
 }
 
@@ -1211,7 +1205,7 @@ input[type="button"] {
   input[type="submit"],
   input[type="reset"],
   input[type="button"] {
-    padding: .8em 2.5em;
+    padding: 20px 20px;
     font-size: 1em;
   }
 }
@@ -1440,7 +1434,7 @@ input[type="button"] {
   input[type="button"] {
     display: inline-block;
     border-radius: 10px;
-    padding: 1.5em 3em;
+    padding: 10px 15px;
     font-size: 1.2em;
     margin: 0 auto;
     color: #FFFF;
@@ -1586,7 +1580,7 @@ form {
   .formtitle {
     width: 65%;
     max-width: 100%;
-    
+
   }
 
   form {
