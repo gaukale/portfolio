@@ -535,6 +535,15 @@ a:hover {
 }
 
 /* case-study data box */
+
+#pieChart1{
+  width: 100%;
+  margin: auto;
+}
+#pieChart2{
+  width: 100%;
+  margin: auto;
+}
 .databoxcontainer {
   background-color: #f2f2f2;
   display: flex;
@@ -590,10 +599,19 @@ a:hover {
   .databoxcontainer h3 {
     font-size: 1.5rem;
   }
+  #pieChart1{
+    width: 70%;
+    margin: auto;
+  }
+  #pieChart2{
+    width: 70%;
+    margin: auto;
+  }
 }
 
 /* Desktops and laptops ----------- */
 @media (min-width: 1024px) {
+
   .databoxcontainer img {
     width: 65%;
     height: auto;
@@ -608,6 +626,14 @@ a:hover {
   .databoxcontainer h3 {
     font-size: 2rem;
     max-width: 75%;
+    margin: auto;
+  }
+  #pieChart1{
+    width:50%;
+    margin: auto;
+  }
+  #pieChart2{
+    width: 50%;
     margin: auto;
   }
 }
@@ -800,6 +826,7 @@ a:hover {
   max-width: 80%;
   width: 100%;
 }
+
 
 /*Tablets ----------- */
 @media (min-width:640px) {
@@ -1021,6 +1048,7 @@ a:hover {
 
 /* Large Screens----------- */
 @media (min-width: 1440px) {
+
   .surveyimages img {
     width: 60%;
     margin: auto;
@@ -1061,7 +1089,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   border-radius: 6px;
-  padding: 5px 12px;
+  padding: 3px 12px;
   margin: 0 auto;
   color: #FFFF;
   background-color: #F9600A;
@@ -1205,7 +1233,7 @@ input[type="button"] {
   input[type="submit"],
   input[type="reset"],
   input[type="button"] {
-    padding: 20px 20px;
+    padding: 5px 15px;
     font-size: 1em;
   }
 }
@@ -1382,7 +1410,7 @@ input[type="button"] {
 }
 
 .coninfobutton a {
-  background-color: #0093fd;
+  background-color: #012832;
 }
 
 @media (min-width:640px) {
