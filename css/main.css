@@ -44,7 +44,11 @@ body {
   font-weight: bold;
   color: #012832;
   overflow: hidden;
-}
+  }
+  .navbar-right li
+    a:hover {
+    color: #F9600A;
+  }
 
 .navbar-left {
   display: flex;
@@ -57,6 +61,7 @@ body {
   max-width: 40%;
   margin: auto;
 }
+
 
 /*Tablets ----------- */
 @media (min-width:640px) {
@@ -381,7 +386,7 @@ body {
 }
 
 .containerinfo a {
-  background-color: #21201F;
+  background-color: #0093FD;
 }
 
 /*Tablets ----------- */
@@ -531,7 +536,7 @@ a:link {
 }
 
 a:hover {
-  color: #F7B334;
+  color: #012832;
 }
 
 /* case-study data box */
@@ -662,7 +667,7 @@ a:hover {
   font-size: 1rem;
   color: #21201F;
   line-height: 1.8;
-  font-family: Merriweather;
+  font-family: Helvetica;
   width: 80%;
   padding-top: 2%;
   padding-bottom: 5%;
@@ -730,7 +735,7 @@ a:hover {
   padding-top: 2%;
   padding-bottom: 3%;
   line-height: 1.8;
-  font-family: Merriweather;
+  font-family: Helvetica;
   width: 80%;
   max-width: 100%;
   margin: auto;
@@ -793,9 +798,9 @@ a:hover {
 }
 
 .points {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #21201F;
-  font-family: Merriweather;
+  font-family: Helvetica;
   line-height: 1.5;
   padding-top:1%;
   padding-bottom: 1%;
@@ -809,9 +814,9 @@ a:hover {
 }
 
 .resanddis p, .analysis p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #21201F;
-  font-family: Merriweather;
+  font-family: Helvetica;
   max-width: 80%;
   margin: auto;
   width: 100%;
@@ -1126,7 +1131,7 @@ input[type="button"] {
   font-size: 1em;
   color: #21201F;
   line-height: 1.8;
-  font-family: Merriweather;
+  font-family: Helvetica;
   padding-top: 2%;
   padding-bottom: 2%;
   max-width: 80%;
@@ -1410,7 +1415,7 @@ input[type="button"] {
 }
 
 .coninfobutton a {
-  background-color: #012832;
+    background-color: #0093FD;  
 }
 
 @media (min-width:640px) {
@@ -1502,7 +1507,7 @@ input[type="button"] {
   max-width: 100%;
   margin: auto;
   font-size: 1em;
-  font-family: Merriweather;
+  font-family: Helvetica;
   padding-top: 2%;
   padding-bottom: 2%;
   line-height: 1.8;
@@ -1536,7 +1541,7 @@ form {
 
 .formtitle {
   font-size: 1em;
-  font-family: Merriweather;
+  font-family: Helvetica;
   padding-top: 2%;
   padding-bottom: 2%;
 }
